@@ -1,0 +1,425 @@
+{
+  "serverdensity": {
+    "feed": "https://status.serverdensity.com/history.atom"
+  },
+  "bandwidth": {
+    "feed": "http://status.bandwidth.com/history.atom"
+  },
+  "greenhouse": {
+    "feed": "https://greenhouse.statuspage.io/history.atom"
+  },
+  "developer": {
+    "feed": "https://status.developer.xero.com/history.atom"
+  },
+  "cloudinary": {
+    "feed": "https://status.cloudinary.com/history.atom"
+  },
+  "talkdesk": {
+    "feed": "http://status.talkdesk.com/history.atom"
+  },
+  "pubnub": {
+    "feed": "http://status.pubnub.com/history.atom"
+  },
+  "bigcartel": {
+    "feed": "http://status.bigcartel.com/history.atom"
+  },
+  "trust": {
+    "feed": "http://trust.pardot.com/history.atom"
+  },
+  "cloudamqp": {
+    "feed": "http://status.cloudamqp.com/history.atom"
+  },
+  "Yarn": {
+    "feed": "https://status.yarnpkg.com/atom"
+  },
+  "appneta": {
+    "feed": "http://status.appneta.com/history.atom"
+  },
+  "compose": {
+    "feed": "https://status.compose.com/history.atom"
+  },
+  "syncano": {
+    "feed": "http://syncano.statuspage.io/history.atom"
+  },
+  "getstream": {
+    "feed": "http://status.getstream.io/history.atom"
+  },
+  "callfire": {
+    "feed": "http://status.callfire.com/history.atom"
+  },
+  "runscope": {
+    "feed": "http://status.runscope.com/history.atom"
+  },
+  "TravisCI": {
+    "feed": "https://www.traviscistatus.com/history.atom"
+  },
+  "jumpcloud": {
+    "feed": "http://status.jumpcloud.com/history.atom"
+  },
+  "loadimpact": {
+    "feed": "http://status.loadimpact.com/history.atom"
+  },
+  "sendwithus": {
+    "feed": "https://status.sendwithus.com/history.atom"
+  },
+  "geckoboard": {
+    "feed": "https://geckoboard.statuspage.io/history.atom"
+  },
+  "catchpoint": {
+    "feed": "http://status.catchpoint.com/history.atom"
+  },
+  "datasift": {
+    "feed": "https://status.datasift.com/history.atom"
+  },
+  "rightscale": {
+    "feed": "http://status.rightscale.com/history.atom"
+  },
+  "pagerduty": {
+    "feed": "https://status.pagerduty.com/history.atom"
+  },
+  "redislabs": {
+    "feed": "https://status.redislabs.com/history.atom"
+  },
+  "kickbox": {
+    "feed": "http://status.kickbox.io/history.atom"
+  },
+  "zoom": {
+    "feed": "https://status.zoom.us/history.atom"
+  },
+  "loggly": {
+    "feed": "http://status.loggly.com/history.atom"
+  },
+  "braintreepayments": {
+    "feed": "https://status.braintreepayments.com/history.atom"
+  },
+  "easypost": {
+    "feed": "https://easypost.statuspage.io/history.atom"
+  },
+  "pantheon": {
+    "feed": "https://status.pantheon.io/history.atom"
+  },
+  "clearbit": {
+    "feed": "http://status.clearbit.com/history.atom"
+  },
+  "brightpearl": {
+    "feed": "https://status.brightpearl.com/history.atom"
+  },
+  "fullcontact": {
+    "feed": "https://status.fullcontact.com/history.atom"
+  },
+  "newrelic": {
+    "feed": "https://status.newrelic.com/history.atom"
+  },
+  "circleci": {
+    "feed": "https://circleci.statuspage.io/history.atom"
+  },
+  "Python": {
+    "feed": "https://status.python.org/history.atom"
+  },
+  "envoy": {
+    "feed": "https://status.envoy.com/history.atom"
+  },
+  "squarespace": {
+    "feed": "https://status.squarespace.com/history.atom"
+  },
+  "OpenSuSE": {
+    "feed": "https://status.opensuse.org/atom"
+  },
+  "sendgrid": {
+    "feed": "http://status.sendgrid.com/history.atom"
+  },
+  "saucelabs": {
+    "feed": "https://status.saucelabs.com/history.atom"
+  },
+  "splashtop": {
+    "feed": "http://status.splashtop.com/history.atom"
+  },
+  "deadmanssnitch": {
+    "feed": "http://status.deadmanssnitch.com/history.atom"
+  },
+  "venmo": {
+    "feed": "http://status.venmo.com/history.atom"
+  },
+  "desk": {
+    "feed": "https://status.desk.com/history.atom"
+  },
+  "npmjs": {
+    "feed": "https://status.npmjs.org/history.atom"
+  },
+  "modeanalytics": {
+    "feed": "http://status.modeanalytics.com/history.atom"
+  },
+  "codeship": {
+    "feed": "http://codeship.statuspage.io/history.atom"
+  },
+  "redtailtechnology": {
+    "feed": "http://status.redtailtechnology.com/history.atom"
+  },
+  "rollbar": {
+    "feed": "http://status.rollbar.com/history.atom"
+  },
+  "chargify": {
+    "feed": "http://status.chargify.io/history.atom"
+  },
+  "linode": {
+    "feed": "https://status.linode.com/history.atom"
+  },
+  "bonsai": {
+    "feed": "https://status.bonsai.io/history.atom"
+  },
+  "rubygems": {
+    "feed": "https://status.rubygems.org/history.atom"
+  },
+  "CloudSigma": {
+    "feed": "http://status.cloudsigma.com/history.atom"
+  },
+  "cxengage": {
+    "feed": "http://status.cxengage.com/history.atom"
+  },
+  "skylight": {
+    "feed": "http://status.skylight.io/history.atom"
+  },
+  "keen": {
+    "feed": "http://status.keen.io/history.atom"
+  },
+  "shopkeep": {
+    "feed": "http://status.shopkeep.com/history.atom"
+  },
+  "sharefile": {
+    "feed": "http://status.sharefile.com/history.atom"
+  },
+  "clojars": {
+    "feed": "http://status.clojars.org/history.atom"
+  },
+  "mediatemple": {
+    "feed": "https://status.mediatemple.net/history.atom"
+  },
+  "hipchat": {
+    "feed": "https://status.hipchat.com/history.atom"
+  },
+  "salesforceiq": {
+    "feed": "https://status.salesforceiq.com/history.atom"
+  },
+  "authorize": {
+    "feed": "https://status.authorize.net/history.atom"
+  },
+  "heapanalytics": {
+    "feed": "http://status.heapanalytics.com/history.atom"
+  },
+  "clarifai": {
+    "feed": "http://status.clarifai.com/history.atom"
+  },
+  "bigwig": {
+    "feed": "http://bigwig.statuspage.io/history.atom"
+  },
+  "librato": {
+    "feed": "https://status.librato.com/history.atom"
+  },
+  "baremetrics": {
+    "feed": "http://status.baremetrics.com/history.atom"
+  },
+  "shopify": {
+    "feed": "https://status.shopify.com/history.atom"
+  },
+  "sitespect": {
+    "feed": "http://status.sitespect.com/history.atom"
+  },
+  "chartbeat": {
+    "feed": "https://chartbeat.statuspage.io/history.atom"
+  },
+  "digitalocean": {
+    "feed": "https://status.digitalocean.com/history.atom"
+  },
+  "chef": {
+    "feed": "https://status.chef.io/history.atom"
+  },
+  "loader": {
+    "feed": "http://status.loader.io/history.atom"
+  },
+  "credsimple": {
+    "feed": "https://status.credsimple.com/history.atom"
+  },
+  "split": {
+    "feed": "https://status.split.io/history.atom"
+  },
+  "servint": {
+    "feed": "https://servint.statuspage.io/history.atom"
+  },
+  "dialpad": {
+    "feed": "https://status.dialpad.com/history.atom"
+  },
+  "sparkpost": {
+    "feed": "https://status.sparkpost.com/history.atom"
+  },
+  "plivo": {
+    "feed": "https://status.plivo.com/history.atom"
+  },
+  "maxcdn": {
+    "feed": "https://status.maxcdn.com/history.atom"
+  },
+  "bitbucket": {
+    "feed": "https://status.bitbucket.org/history.atom"
+  },
+  "recurly": {
+    "feed": "https://status.recurly.com/history.atom"
+  },
+  "imgix": {
+    "feed": "https://status.imgix.com/history.atom"
+  },
+  "dnsimple": {
+    "feed": "https://dnsimple.statuspage.io/history.atom"
+  },
+  "artifactoryonline": {
+    "feed": "http://status.artifactoryonline.com/history.atom"
+  },
+  "scoutapp": {
+    "feed": "https://status.scoutapp.com/history.atom"
+  },
+  "hashicorp": {
+    "feed": "https://status.hashicorp.com/history.atom"
+  },
+  "redistogo": {
+    "feed": "http://redistogo.statuspage.io/history.atom"
+  },
+  "openshift": {
+    "feed": "https://status.openshift.com/history.atom"
+  },
+  "binarylane": {
+    "feed": "http://status.binarylane.com.au/history.atom"
+  },
+  "codetree": {
+    "feed": "http://status.codetree.com/history.atom"
+  },
+  "pusher": {
+    "feed": "https://status.pusher.com/history.atom"
+  },
+  "helpscout": {
+    "feed": "https://status.helpscout.net/history.atom"
+  },
+  "lifesizecloud": {
+    "feed": "http://status.lifesizecloud.com/history.atom"
+  },
+  "pingdom": {
+    "feed": "http://status.pingdom.com/history.atom"
+  },
+  "fastly": {
+    "feed": "https://status.fastly.com/history.atom"
+  },
+  "metastatuspage": {
+    "feed": "http://metastatuspage.com/history.atom"
+  },
+  "blueboxcom": {
+    "feed": "https://blueboxstatus.com/history.atom"
+  },
+  "nsonenet": {
+    "feed": "http://www.nsonestatus.net/history.atom"
+  },
+  "dropbox": {
+    "feed": "https://status.dropbox.com/history.atom"
+  },
+  "duo": {
+    "feed": "https://status.duo.com/history.atom"
+  },
+  "rapid7": {
+    "feed": "https://status.rapid7.com/history.atom"
+  },
+  "Redhat": {
+    "feed": "https://status.redhat.com/history.atom"
+  },
+  "smartsheet": {
+    "feed": "https://status.smartsheet.com/history.atom"
+  },
+  "datadoghq": {
+    "feed": "https://status.datadoghq.com/history.atom"
+  },
+  "cloudflarecom": {
+    "feed": "https://www.cloudflarestatus.com/history.atom"
+  },
+  "airbrake": {
+    "feed": "https://status.airbrake.io/history.atom"
+  },
+  "codeclimate": {
+    "feed": "http://status.codeclimate.com/history.atom"
+  },
+  "opbeat": {
+    "feed": "http://status.opbeat.com/history.atom"
+  },
+  "graphenedb": {
+    "feed": "http://status.graphenedb.com/history.atom"
+  },
+  "incapsula": {
+    "feed": "https://status.incapsula.com/history.atom"
+  },
+  "box": {
+    "feed": "https://status.box.com/history.atom"
+  },
+  "segment": {
+    "feed": "https://status.segment.com/history.atom"
+  },
+  "stoplight": {
+    "feed": "http://status.stoplight.io/history.atom"
+  },
+  "zapier": {
+    "feed": "https://status.zapier.com/history.atom"
+  },
+  "unroll": {
+    "feed": "http://status.unroll.me/history.atom"
+  },
+  "tddium": {
+    "feed": "http://status.tddium.com/history.atom"
+  },
+  "typeform": {
+    "feed": "http://status.typeform.com/history.atom"
+  },
+  "easyredir": {
+    "feed": "https://easyredir.statuspage.io/history.atom"
+  },
+  "dyncom": {
+    "feed": "https://www.dynstatus.com/history.atom"
+  },
+  "bintray": {
+    "feed": "http://status.bintray.com/history.atom"
+  },
+  "breadcrumb": {
+    "feed": "http://status.breadcrumb.com/history.atom"
+  },
+  "instapage": {
+    "feed": "https://status.instapage.com/history.atom"
+  },
+  "coinbase": {
+    "feed": "https://coinbase.statuspage.io/history.atom"
+  },
+  "optimizely": {
+    "feed": "http://status.optimizely.com/history.atom"
+  },
+  "bitrise": {
+    "feed": "http://status.bitrise.io/history.atom"
+  },
+  "papertrailcom": {
+    "feed": "http://www.papertrailstatus.com/history.atom"
+  },
+  "pipedrive": {
+    "feed": "http://status.pipedrive.com/history.atom"
+  },
+  "websolr": {
+    "feed": "http://status.websolr.com/history.atom"
+  },
+  "victorops": {
+    "feed": "https://status.victorops.com/history.atom"
+  },
+  "gearhost": {
+    "feed": "https://gearhost.statuspage.io/history.atom"
+  },
+  "flowdock": {
+    "feed": "http://status.flowdock.com/history.atom"
+  },
+  "iron": {
+    "feed": "https://status.iron.io/history.atom"
+  },
+  "engineyard": {
+    "feed": "https://engineyard.statuspage.io/history.atom"
+  },
+  "ifttt": {
+    "feed": "http://status.ifttt.com/history.atom"
+  }
+}

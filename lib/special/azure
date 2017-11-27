@@ -1,0 +1,36 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use JSON;
+use XML::RSSLite;
+
+my $url = 'https://azure.microsoft.com/en-us/status/feed/';
+my %status = (
+	name	=> 'Microsoft Azure',
+	url	=> 'https://azure.microsoft.com/en-us/status',
+	feed    => $url,
+	results => []
+);
+my $feed=`curl -s "$url"`;
+my $today=`date -R | awk '{print \$1,\$2,\$3,\$4}'`;
+chomp $today;
+
+if($feed !~ /<title>Azure Status<\/title>/) {
+	print '{ "fetch": "unknown", "details": "Fetch fetch failed!"}';
+	exit;
+} else {
+	# Try to parse RSS
+	my %result;
+	parseRSS(\%result, \$feed);
+	foreach my $item (@{$result{'item'}}) {
+		if($item->{'pubDate'} =~ /^$today/) {
+			push(@{$status{results}}, {
+				time        => $item->{pubDate},
+				title       => $item->{title},
+				description => $item->{description}
+			})
+		}
+	}
+}
+print to_json(\%status);

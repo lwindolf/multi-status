@@ -1,0 +1,36 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use JSON;
+use XML::RSSLite;
+
+my $url = 'http://status.docker.com/pages/533c6539221ae15e3f000031/rss';
+my %status = (
+	name	=> 'Docker',
+	url	=> 'https://status.docker.com/',
+	feed    => $url,
+	results => []
+);
+my $feed=`curl -s "$url"`;
+my $today=`date -R | awk '{print \$1,\$2,\$3,\$4}'`;
+chomp $today;
+
+if($feed !~ /<title>.*Docker System Status.*<\/title>/) {
+	print '{ "fetch": "unknown", "details": "Fetch fetch failed!"}';
+	exit;
+} else {
+	# Try to parse RSS
+	my %result;
+	parseRSS(\%result, \$feed);
+	foreach my $item (@{$result{'item'}}) {
+		if($item->{'pubDate'} =~ /^$today/) {
+			push(@{$status{results}}, {
+				time        => $item->{pubDate},
+				title       => $item->{title},
+				description => $item->{description}
+			})
+		}
+	}
+}
+print to_json(\%status);

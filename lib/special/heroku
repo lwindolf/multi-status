@@ -1,0 +1,34 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use XML::Feed;
+use JSON;
+
+my $today=`date -I | awk '{print \$1}'`;
+chomp $today;
+my $url = 'http://feeds.feedburner.com/herokustatus';
+my $data = `curl -sk "$url"`;
+my %status = (
+	name => 'Heroku',
+	url  => 'https://status.heroku.com/',
+	feed => $url,
+	results => []
+);
+my $feed = XML::Feed->parse(\$data);
+
+unless(defined($feed) && defined($feed->entries)) {
+	print '{ "fetch": "unknown", "details": "Fetch fetch failed!"}';
+	exit;
+}
+
+foreach ($feed->entries) {
+	next unless($_->updated =~ /^$today/);
+	push(@{$status{'results'}}, {
+		time		=> $_->updated,
+		title		=> $_->title,
+		content 	=> $_->content->body
+	});
+}
+
+print to_json(\%status);
