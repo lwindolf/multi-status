@@ -17,7 +17,7 @@ my $today=`date -R | awk '{print \$1,\$2,\$3,\$4}'`;
 chomp $today;
 
 if($feed !~ /<title>GitHub Service Status<\/title>/) {
-	print '{ "fetch": "unknown", "details": "Feed fetch failed!"}';
+	print '{ "name": "Github", "fetch": "unknown", "details": "Feed fetch failed!", "results": []}';
 	exit;
 } else {
 	# Try to parse RSS
