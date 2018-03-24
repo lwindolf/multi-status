@@ -18,7 +18,7 @@ my %status = (
 my $feed = XML::Feed->parse(\$data);
 
 unless(defined($feed) && defined($feed->entries)) {
-	print '{ "fetch": "unknown", "details": "Fetch fetch failed!"}';
+	print '{ "fetch": "unknown", "details": "Feed fetch failed!"}';
 	exit;
 }
 

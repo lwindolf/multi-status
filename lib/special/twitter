@@ -17,7 +17,7 @@ my $today=`date -R | awk '{print \$1,\$2,\$3,\$4}'`;
 chomp $today;
 
 if($feed !~ /<title>.*System Status Page.*<\/title>/) {
-	print '{ "fetch": "unknown", "details": "Fetch fetch failed!"}';
+	print '{ "fetch": "unknown", "details": "Feed fetch failed!"}';
 	exit;
 } else {
 	# Try to parse RSS
