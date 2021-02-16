@@ -439,5 +439,8 @@
   },
   "cdnjs": {
     "feed": "https://status.cdnjs.com/history.atom"
+  },
+  "quay.io": {
+    "feed": "https://status.quay.io/history.atom"
   }
 }
