@@ -29,9 +29,6 @@
   "cloudamqp": {
     "feed": "http://status.cloudamqp.com/history.atom"
   },
-  "Yarn": {
-    "feed": "https://status.yarnpkg.com/atom"
-  },
   "appneta": {
     "feed": "http://status.appneta.com/history.atom"
   },
@@ -89,9 +86,6 @@
   "loggly": {
     "feed": "http://status.loggly.com/history.atom"
   },
-  "braintreepayments": {
-    "feed": "https://status.braintreepayments.com/history.atom"
-  },
   "easypost": {
     "feed": "https://easypost.statuspage.io/history.atom"
   },
@@ -122,9 +116,6 @@
   "squarespace": {
     "feed": "https://status.squarespace.com/history.atom"
   },
-  "OpenSuSE": {
-    "feed": "https://status.opensuse.org/atom"
-  },
   "sendgrid": {
     "feed": "http://status.sendgrid.com/history.atom"
   },
@@ -136,12 +127,6 @@
   },
   "deadmanssnitch": {
     "feed": "http://status.deadmanssnitch.com/history.atom"
-  },
-  "venmo": {
-    "feed": "http://status.venmo.com/history.atom"
-  },
-  "desk": {
-    "feed": "https://status.desk.com/history.atom"
   },
   "npmjs": {
     "feed": "https://status.npmjs.org/history.atom"
@@ -194,14 +179,8 @@
   "mediatemple": {
     "feed": "https://status.mediatemple.net/history.atom"
   },
-  "hipchat": {
-    "feed": "https://status.hipchat.com/history.atom"
-  },
   "salesforceiq": {
     "feed": "https://status.salesforceiq.com/history.atom"
-  },
-  "authorize": {
-    "feed": "https://status.authorize.net/history.atom"
   },
   "heapanalytics": {
     "feed": "http://status.heapanalytics.com/history.atom"
@@ -217,9 +196,6 @@
   },
   "baremetrics": {
     "feed": "http://status.baremetrics.com/history.atom"
-  },
-  "shopify": {
-    "feed": "https://status.shopify.com/history.atom"
   },
   "sitespect": {
     "feed": "http://status.sitespect.com/history.atom"
@@ -281,9 +257,6 @@
   "redistogo": {
     "feed": "http://redistogo.statuspage.io/history.atom"
   },
-  "openshift": {
-    "feed": "https://status.openshift.com/history.atom"
-  },
   "binarylane": {
     "feed": "http://status.binarylane.com.au/history.atom"
   },
@@ -299,9 +272,6 @@
   "lifesizecloud": {
     "feed": "http://status.lifesizecloud.com/history.atom"
   },
-  "pingdom": {
-    "feed": "http://status.pingdom.com/history.atom"
-  },
   "fastly": {
     "feed": "https://status.fastly.com/history.atom"
   },
@@ -310,9 +280,6 @@
   },
   "blueboxcom": {
     "feed": "https://blueboxstatus.com/history.atom"
-  },
-  "nsonenet": {
-    "feed": "http://www.nsonestatus.net/history.atom"
   },
   "dropbox": {
     "feed": "https://status.dropbox.com/history.atom"
@@ -368,9 +335,6 @@
   "unroll": {
     "feed": "http://status.unroll.me/history.atom"
   },
-  "tddium": {
-    "feed": "http://status.tddium.com/history.atom"
-  },
   "typeform": {
     "feed": "http://status.typeform.com/history.atom"
   },
@@ -400,9 +364,6 @@
   },
   "papertrailcom": {
     "feed": "http://www.papertrailstatus.com/history.atom"
-  },
-  "pipedrive": {
-    "feed": "http://status.pipedrive.com/history.atom"
   },
   "websolr": {
     "feed": "http://status.websolr.com/history.atom"

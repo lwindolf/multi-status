@@ -1,0 +1,4 @@
+Hosted by statuscast -> needs generic rss handler
+
+https://status.statuscast.com/#!/
+https://ns1status.com/rss
