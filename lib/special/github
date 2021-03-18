@@ -12,7 +12,7 @@ my %status = (
 	feed    => $url,
 	results => []
 );
-my $feed=`curl -ks "$url"`;
+my $feed=`curl -ksL "$url"`;
 my $today=`date -R | awk '{print \$1,\$2,\$3,\$4}'`;
 chomp $today;
 

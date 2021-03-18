@@ -8,7 +8,7 @@ use JSON;
 my $today=`date -I | awk '{print \$1}'`;
 chomp $today;
 my $url = 'http://feeds.feedburner.com/herokustatus';
-my $data = `curl -sk "$url"`;
+my $data = `curl -skL "$url"`;
 my %status = (
 	name => 'Heroku',
 	url  => 'https://status.heroku.com/',

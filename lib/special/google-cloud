@@ -8,7 +8,7 @@ use JSON;
 my $today=`date -I`;
 chomp $today;
 my $url = "https://status.cloud.google.com/feed.atom";
-my $data = `curl -sk "$url"`;
+my $data = `curl -skL "$url"`;
 my %status = (
 	name => 'Google Cloud',
 	url  => 'https://status.cloud.google.com/',
