@@ -329,6 +329,9 @@
   "smartsheet": {
     "feed": "https://status.smartsheet.com/history.atom"
   },
+  "datadog": {
+    "feed": "https://datadog.statuspage.io/history.atom"
+  },
   "datadoghq": {
     "feed": "https://status.datadoghq.com/history.atom"
   },
@@ -421,5 +424,23 @@
   },
   "ifttt": {
     "feed": "http://status.ifttt.com/history.atom"
+  },
+  "launchpad": {
+    "feed": "https://launchpad.statuspage.io/history.atom"
+  },
+  "discord": {
+    "feed": "https://discord.statuspage.io/history.atom"
+  },
+  "twilio": {
+    "feed": "https://twilio.statuspage.io/history.atom"
+  },
+  "opsgenie": {
+    "feed": "https://opsgenie.statuspage.io/history.atom"
+  },
+  "cdnjs": {
+    "feed": "https://status.cdnjs.com/history.atom"
+  },
+  "quay.io": {
+    "feed": "https://status.quay.io/history.atom"
   }
 }
