@@ -14,7 +14,7 @@ my $today=`date -I`;
 chomp $today;
 
 foreach my $k (keys %$config) {
-	my $data = `curl -ks "$config->{$k}->{feed}"`;
+	my $data = `curl -Lks "$config->{$k}->{feed}"`;
 	my %status = %{$config->{$k}};
 	$status{name} = $k;
 	$status{results} = [];
