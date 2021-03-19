@@ -5,6 +5,8 @@ use strict;
 use XML::Feed;
 use JSON;
 
+binmode(STDOUT, "encoding(UTF-8)");
+
 open FILE, "conf/atom-feeds.json" or die $!;
 my @json = <FILE>;
 my $config = from_json(join('',@json));
@@ -34,9 +36,9 @@ foreach my $k (sort(keys %$config)) {
 			foreach ($feed->entries) {
 				next unless($_->updated =~ /^$today/);
 				push(@{$status{'results'}}, {
-					time		=> $_->updated,
-					title		=> $_->title,
-					description	=> $_->content->body
+					time		=> $_->updated->strftime("%F %H:%M"),
+					title		=> $_->title =~ s/<[^>]*>/ /gr,
+					description	=> $_->content->body =~ s/<[^>]*>/ /gr
 				});
 			}
 		}
@@ -52,9 +54,12 @@ foreach my $k (sort(keys %$config)) {
 		print to_json(\%status) . "\n";
 		1;
 	} or do {
+		use Data::Dumper;
+		warn "Data serialization failed: ".Dumper(\$status{results})."\n";
+
 		$status{fetch} = "FAILED";
 		$status{results} = [];
-		$status{details} = "Data serialization!";
+		$status{details} = "Data serialization failed!";
 		print to_json(\%status) . "\n";
 	}
 }
