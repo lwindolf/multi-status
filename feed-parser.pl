@@ -7,13 +7,16 @@ use JSON;
 
 binmode(STDOUT, "encoding(UTF-8)");
 
-open FILE, "conf/atom-feeds.json" or die $!;
+open FILE, "conf/feeds.json" or die $!;
 my @json = <FILE>;
 my $config = from_json(join('',@json));
 close FILE;
 
+# Prepare 2 today strings matching the date in RFC-822 (for RSS) and ISO-8601 (Atom)
 my $today=`date -I`;
+my $today2=`date -R | awk '{print \$1,\$2,\$3,\$4}'`;
 chomp $today;
+chomp $today2;
 
 foreach my $k (sort(keys %$config)) {
 	my $data = `curl -Lks "$config->{$k}->{feed}"`;
@@ -33,12 +36,24 @@ foreach my $k (sort(keys %$config)) {
 			$status{details} = "Parsing failed!";
 		} else {
 			$status{fetch} = "OK";
-			foreach ($feed->entries) {
-				next unless($_->updated =~ /^$today/);
+			foreach my $e ($feed->entries) {
+				my $time = undef;
+
+				if(blessed $e eq 'XML::Feed::Entry::Format::Atom') {
+					next unless($e->updated =~ /^$today/);
+					$time = $e->updated->epoch;
+				}
+
+				if(blessed $e eq 'XML::Feed::Entry::Format::RSS') {
+					next unless($e->{entry}->{pubDate} =~ /^$today2/);
+					$time = $e->{entry}->{pubDate};
+				}
+				next unless(defined($time));
+
 				push(@{$status{'results'}}, {
-					time		=> $_->updated->strftime("%F %H:%M"),
-					title		=> $_->title =~ s/<[^>]*>/ /gr,
-					description	=> $_->content->body =~ s/<[^>]*>/ /gr
+					time		=> $time,
+					title		=> $e->title =~ s/<[^>]*>/ /gr,
+					description	=> $e->content->body =~ s/<[^>]*>/ /gr
 				});
 			}
 		}
@@ -47,7 +62,7 @@ foreach my $k (sort(keys %$config)) {
 	} or do {
 		$status{fetch} = "FAILED";
 		$status{details} = "Fetch fetch failed!";
-		warn "Fetch failed for '$k': $_";
+		warn "Fetch failed for '$k': $@";
 	};
 
 	eval {
