@@ -3,6 +3,9 @@ Aggregator for status pages of online services. Know which of your 3rd party Saa
 
 Backend for https://lzone.de/multi-status/
 
+![image](https://user-images.githubusercontent.com/3315368/112210956-9bc02a80-8c1b-11eb-8448-cf37e2de8b84.png)
+
+
 ## Usage
 
     ./update.pl > output.json
