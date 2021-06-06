@@ -25,3 +25,7 @@ Currently the following providers status pages are supported:
 
 If you are missing a status page feel free to add it to `conf/feeds.json`
 and to create a PR!
+
+## Installation
+
+    sudo apt-get install libjson-perl libxml-feed-perl
