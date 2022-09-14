@@ -440,4 +440,8 @@
   "Code Climate": {
     "feed": "https://status.codeclimate.com/history.atom"
   },
+  "Sentry": {
+    "feed": "https://status.sentry.io/history.atom"
+  }
+  
 }
