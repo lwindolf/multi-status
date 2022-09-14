@@ -442,5 +442,8 @@
   },
   "Sentry": {
     "feed": "https://status.sentry.io/history.atom"
+  },
+  "Sonarcloud": {
+    "feed": "https://sonarcloud.statuspage.io/history.atom"
   }
 }
