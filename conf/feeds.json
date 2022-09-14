@@ -443,5 +443,4 @@
   "Sentry": {
     "feed": "https://status.sentry.io/history.atom"
   }
-  
 }
