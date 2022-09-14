@@ -433,5 +433,11 @@
   },
   "OVHloud": {
     "feed": "https://status.us.ovhcloud.com/pages/59dd23da8827c804746f1664/rss"
-  }
+  },
+  "Jira": {
+    "feed": "https://jira-software.status.atlassian.com/history.atom"
+  },
+  "Code Climate": {
+    "feed": "https://status.codeclimate.com/history.atom"
+  },
 }
