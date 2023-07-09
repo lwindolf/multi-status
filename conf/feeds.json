@@ -401,6 +401,9 @@
   "Jira": {
     "feed": "https://jira-software.status.atlassian.com/history.atom"
   },
+  "Confluence": {
+    "feed": "https://confluence.status.atlassian.com/history.atom"
+  },
   "Code Climate": {
     "feed": "https://status.codeclimate.com/history.atom"
   },
@@ -412,5 +415,11 @@
   },
   "elastic.co": {
     "feed": "https://status.elastic.co/history.atom"
+  },
+  "lastpass": {
+    "feed": "https://status.lastpass.com/history.atom"
+  },
+  "letsencrypt": {
+    "feed": "https://letsencrypt.status.io/pages/55957a99e800baa4470002da/rss"
   }
 }
