@@ -23,14 +23,8 @@
   "bigcartel": {
     "feed": "http://status.bigcartel.com/history.atom"
   },
-  "trust": {
-    "feed": "http://trust.pardot.com/history.atom"
-  },
   "cloudamqp": {
     "feed": "http://status.cloudamqp.com/history.atom"
-  },
-  "compose": {
-    "feed": "https://status.compose.com/history.atom"
   },
   "syncano": {
     "feed": "http://syncano.statuspage.io/history.atom"
@@ -50,9 +44,6 @@
   "jumpcloud": {
     "feed": "http://status.jumpcloud.com/history.atom"
   },
-  "loadimpact": {
-    "feed": "http://status.loadimpact.com/history.atom"
-  },
   "sendwithus": {
     "feed": "https://status.sendwithus.com/history.atom"
   },
@@ -61,9 +52,6 @@
   },
   "catchpoint": {
     "feed": "http://status.catchpoint.com/history.atom"
-  },
-  "datasift": {
-    "feed": "https://status.datasift.com/history.atom"
   },
   "rightscale": {
     "feed": "http://status.rightscale.com/history.atom"
@@ -251,9 +239,6 @@
   "hashicorp": {
     "feed": "https://status.hashicorp.com/history.atom"
   },
-  "redistogo": {
-    "feed": "http://redistogo.statuspage.io/history.atom"
-  },
   "binarylane": {
     "feed": "http://status.binarylane.com.au/history.atom"
   },
@@ -269,14 +254,8 @@
   "lifesizecloud": {
     "feed": "http://status.lifesizecloud.com/history.atom"
   },
-  "fastly": {
-    "feed": "https://status.fastly.com/history.atom"
-  },
   "metastatuspage": {
     "feed": "http://metastatuspage.com/history.atom"
-  },
-  "blueboxcom": {
-    "feed": "https://blueboxstatus.com/history.atom"
   },
   "dropbox": {
     "feed": "https://status.dropbox.com/history.atom"
@@ -308,9 +287,6 @@
   "codeclimate": {
     "feed": "http://status.codeclimate.com/history.atom"
   },
-  "opbeat": {
-    "feed": "http://status.opbeat.com/history.atom"
-  },
   "graphenedb": {
     "feed": "http://status.graphenedb.com/history.atom"
   },
@@ -328,9 +304,6 @@
   },
   "zapier": {
     "feed": "https://status.zapier.com/history.atom"
-  },
-  "unroll": {
-    "feed": "http://status.unroll.me/history.atom"
   },
   "typeform": {
     "feed": "http://status.typeform.com/history.atom"
@@ -367,9 +340,6 @@
   },
   "gearhost": {
     "feed": "https://gearhost.statuspage.io/history.atom"
-  },
-  "flowdock": {
-    "feed": "http://status.flowdock.com/history.atom"
   },
   "iron": {
     "feed": "https://status.iron.io/history.atom"
@@ -439,5 +409,8 @@
   },
   "Sonarcloud": {
     "feed": "https://sonarcloud.statuspage.io/history.atom"
+  },
+  "elastic.co": {
+    "feed": "https://status.elastic.co/history.atom"
   }
 }
