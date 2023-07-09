@@ -412,5 +412,8 @@
   },
   "elastic.co": {
     "feed": "https://status.elastic.co/history.atom"
+  },
+  "hetzner": {
+    "feed": "https://status.hetzner.com/de.atom"
   }
 }
