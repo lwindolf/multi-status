@@ -2,4 +2,4 @@ Hosted by Sorry, which has no RSS/Atom feeds
 
 http://status.pingdom.com/
 http://status.pipedrive.com/
-
+https://status.broadcom.com/services/appneta/

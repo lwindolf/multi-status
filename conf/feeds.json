@@ -29,9 +29,6 @@
   "cloudamqp": {
     "feed": "http://status.cloudamqp.com/history.atom"
   },
-  "appneta": {
-    "feed": "http://status.appneta.com/history.atom"
-  },
   "compose": {
     "feed": "https://status.compose.com/history.atom"
   },
@@ -344,9 +341,6 @@
   "dyncom": {
     "feed": "https://www.dynstatus.com/history.atom"
   },
-  "bintray": {
-    "feed": "http://status.bintray.com/history.atom"
-  },
   "breadcrumb": {
     "feed": "http://status.breadcrumb.com/history.atom"
   },
@@ -411,7 +405,7 @@
     "feed": "https://status.dev.azure.com/_rss"
   },
   "Docker": {
-    "feed": "https://status.docker.com/pages/533c6539221ae15e3f000031/rss"
+    "feed": "https://www.dockerstatus.com/pages/533c6539221ae15e3f000031/rss"
   },
   "Github": {
     "feed": "https://www.githubstatus.com/history.atom"
