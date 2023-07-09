@@ -41,7 +41,11 @@ foreach my $k (sort(keys %$config)) {
 
 				if(blessed $e eq 'XML::Feed::Entry::Format::Atom') {
 					next unless($e->updated =~ /^$today/);
-					$time = $e->updated->epoch;
+					if(ref($e->updated) eq '') {
+						$time = $e->updated;
+					} else {
+						$time = $e->updated->epoch;
+					}
 				}
 
 				if(blessed $e eq 'XML::Feed::Entry::Format::RSS') {
