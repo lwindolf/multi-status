@@ -1,14 +1,14 @@
 
 var cacheName = 'saas-multi-status';
 var filesToCache = [
-  '/',
-  '/index.html',
-  '/about.html',
-  '/filter.html',
-  '/css/style.css',
-  '/js/main.js',
-  '/js/filter.js',
-  '/js/settings.js'
+  '/multi-status/',
+  '/multi-status/index.html',
+  '/multi-status/about.html',
+  '/multi-status/filter.html',
+  '/multi-status/css/style.css',
+  '/multi-status/js/main.js',
+  '/multi-status/js/filter.js',
+  '/multi-status/js/settings.js'
 ];
 
 /* Start the service worker and cache all of the app's content */
