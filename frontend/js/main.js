@@ -67,7 +67,7 @@ function setInfo(str) {
 }
 
 async function getData() {
-        const response = await fetch("https://lzone.de/multi-status/data.json");
+        const response = await fetch("/multi-status/data.json");
         data = await response.json();
         // FIXME: error handling
 }
@@ -118,9 +118,12 @@ window.onload = () => {
                 if(!Array.isArray(filter))
                         filter = [];
 
-                if(document.location.pathname === "/")
+                if(document.location.pathname === "/multi-status/")
                         refresh();
-                if(document.location.pathname === "/filter.html")
+                if(document.location.pathname === "/multi-status/filter.html")
                         filterLoad();
-        });                
+        }).catch((info) => {
+                console.error(info);
+                setInfo(info);
+        });
 }

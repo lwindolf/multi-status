@@ -4,7 +4,7 @@
         "short_name": "SaaS Multi Status",
         "lang": "en-US",
         "start_url": "/multi-status/index.html",
-        "id": "https://lzone.de/multi-status",
+        "id": "/multi-status",
         "display": "standalone",
         "background_color": "white",
         "theme_color": "white"
