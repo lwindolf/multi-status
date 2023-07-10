@@ -4,7 +4,7 @@
 
 This is an aggregator and a progressive web app (PWA) for status pages of many important online infrastructure services. Know which of your 3rd party SaaS/PaaS are having issues right now.
 
-Backend for https://lzone.de/multi-status/
+Check it out at https://lzone.de/multi-status/
 
 ## Usage
 
