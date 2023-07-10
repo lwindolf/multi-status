@@ -424,5 +424,11 @@
   },
   "letsencrypt": {
     "feed": "https://letsencrypt.status.io/pages/55957a99e800baa4470002da/rss"
-  }
+  },
+  "Akamai Edge": {
+    "feed": "https://www.akamaistatus.com/history.atom"
+  },
+  "IONOS Cloud": {
+    "feed": "https://status.ionos.cloud/history.atom"
+  }  
 }
