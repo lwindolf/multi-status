@@ -2,9 +2,13 @@ body {
   font-family: sans-serif;
 }
 
+h1.title {
+  font-size: 3rem;
+}
 h1.title svg {
+  height: 3rem;
   filter: drop-shadow(1px 1px 1px rgb(0 0 0 / 0.4));
-  vertical-align: bottom;
+  vertical-align: middle;
   margin-right: 6px;
 }
 
@@ -20,6 +24,16 @@ h1.title svg {
   h1.title svg {
     filter: drop-shadow(1px 1px 1px rgb(255 255 255 / 0.6));
   }  
+}
+
+@media only screen and (max-width: 600px) {
+  h1.title {
+    font-size: 2rem;
+  }
+  h1.title svg {
+    height: 2rem;
+    margin-right: 0;
+  }
 }
 
 a {
@@ -45,16 +59,12 @@ html,
   max-width: 800px;
 }
 
-.title {
-  font-size: 3rem;
-}
-
 .name {
   font-size: 1.5rem;  
 }
 
 #date {
-  margin: 6px 0;
+  margin: 6px 0 32px 0;
   filter: brightness(50%);
   font-size: 0.8rem;
 }
