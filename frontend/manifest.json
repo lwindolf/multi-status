@@ -7,5 +7,12 @@
         "id": "/multi-status",
         "display": "standalone",
         "background_color": "white",
-        "theme_color": "white"
+        "theme_color": "white",
+        "icons": [
+          {
+            "src": "health+pulse+status+icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          }
+        ]
       }
