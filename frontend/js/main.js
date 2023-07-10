@@ -64,6 +64,7 @@ function toggleDetails(ev) {
 function setInfo(str) {
         const date = document.getElementById('date');
         date.innerHTML = str;
+        console.log(str);
 }
 
 async function getData() {
@@ -118,7 +119,7 @@ window.onload = () => {
                 if(!Array.isArray(filter))
                         filter = [];
 
-                if(document.location.pathname === "/multi-status/")
+                if(document.location.pathname.match(/multi-status\/(index.html)?/))
                         refresh();
                 if(document.location.pathname === "/multi-status/filter.html")
                         filterLoad();
