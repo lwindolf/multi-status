@@ -1,0 +1,122 @@
+body {
+  font-family: sans-serif;
+}
+
+h1.title svg {
+  filter: drop-shadow(1px 1px 1px rgb(0 0 0 / 0.4));
+  vertical-align: bottom;
+  margin-right: 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #323232;
+		color: #eee;
+	}
+
+  a {
+    color: #2c84fa;
+  }
+  h1.title svg {
+    filter: drop-shadow(1px 1px 1px rgb(255 255 255 / 0.6));
+  }  
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+      
+/* Make content area fill the entire browser window */
+html,
+.fullscreen {
+  display: flex;
+  height: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+/* Center the content in the browser window */
+.container {
+  margin: auto;
+  text-align: center;
+  max-width: 800px;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.name {
+  font-size: 1.5rem;  
+}
+
+#date {
+  margin: 6px 0;
+  filter: brightness(50%);
+  font-size: 0.8rem;
+}
+
+#panel {
+  text-align: left;
+}
+
+#menu {
+  margin-top: 36px;
+}
+
+#multistatus {
+  margin: 12px;
+  margin-bottom: 24px;
+}
+
+#multistatus div.status {
+  display: inline-block;
+  box-sizing: border-box;
+  padding-top: 0.3em;
+  padding-right: 1em;
+  padding-bottom: 0.3em;
+  padding-left: 1em;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+  vertical-align: baseline;
+  cursor: pointer;
+  margin:1px;
+  font-size:0.8em;
+  border-radius: 4px;
+  color: black;
+}
+
+div.status.details {
+  width: 100%;
+}
+
+.status.unknown {
+  background: gray;
+  color: #000;
+}
+
+.details table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 6px 0;
+}
+
+.details table td,th {
+  border:1px solid #444;
+  background: #eee;
+  padding: 6px;
+}
+
+#selection, #others {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background: #eee;
+  padding: 6px; 
+  margin:6px 0;
+  min-height: 100px;
+}

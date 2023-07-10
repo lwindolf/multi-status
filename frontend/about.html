@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>About</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="white"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="fullscreen">
+  <div class="container">
+    <h1 class="title">About</h1>
+    <div id="panel">
+        <p>
+                This application is helping you to get an overview on the status of the
+                SaaS services you rely on. It shows you which services are having a maintainance
+                or an incident during the last 15min. Status are updated every 15min by
+                backend running on <a href="https://lzone.de">lzone.de</a>. The backend is 
+                a simple old-school feed aggregation script that you can find under <a href="https://github.com/lwindolf/multi-status">https://github.com/lwindolf/multi-status</a>.
+        </p>
+        <p>
+                This application can be used...
+                <ul>
+                        <li>on a smartphone to quickly check all service you are interested in.</li>
+                        <li>on a desktop (e.g. installed as a local app) serving as a monitoring window for SaaS status.</li>
+                </ul>
+                In any case you might want to configure a filter so only apps you are interested in are shown.
+                To do so click "Filter" in the main screen.
+        </p>
+    </div>
+    <div id="menu">
+      <span>[ <a href="/">Back</a> ]</span>
+    </div>
+  </div>
+  <script src="js/settings.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
