@@ -8,7 +8,7 @@ Backend for https://lzone.de/multi-status/
 
 ## Usage
 
-    ./update.pl > output.json
+    ./backend/update.pl > output.json
     
 ## Todo
 
