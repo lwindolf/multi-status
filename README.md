@@ -6,16 +6,6 @@ This is an aggregator and a progressive web app (PWA) for status pages of many i
 
 Check it out at https://lzone.de/multi-status/
 
-## Usage
-
-    ./backend/update.pl > output.json
-    
-## Todo
-
-- Date normalization
-- Strip bad encodings
-- Option to query only some providers
-
 ## Supported Status Pages
 
 Currently the following providers status pages are supported:
@@ -24,7 +14,26 @@ Currently the following providers status pages are supported:
 
 If you are missing a status page feel free to add it to `conf/feeds.json`
 and to create a PR!
+ 
+## Todos
 
-## Installation
+- Backend
+  - Date normalization
+  - Strip bad encodings
+  - Option to query only some providers
+
+## Setup
+
+Install dependencies:
 
     sudo apt-get install libjson-perl libxml-feed-perl
+
+Run backend updater
+
+    ./backend/update.pl > data.json
+    
+Serve frontend for testing with
+
+    python3 -m http.server
+
+and access `http://localhost:8000/multi-status`
