@@ -1,3 +1,6 @@
+// vim: set ts=4 sw=4:
+/*jshint esversion: 8 */
+
 /* -------------------------------------------------------------------------
    Persistent settings using IndexedDB
    ------------------------------------------------------------------------- */
@@ -29,18 +32,18 @@ function _settingsDBOpen() {
 
 function settingsGet(name) {
         return _settingsDBOpen().then(() => new Promise((resolve, reject) => {
-        var store = db.transaction("settings", "readonly").objectStore("settings");
-        var req = store.get(name);
-        req.onsuccess = function(evt) {
-                var setting = evt.target.result;
-                if (setting)
-                        resolve(setting.value);
-                else
-                        resolve(null);
-        };
-        req.onerror = function(evt) {
-                reject(`Error getting setting ${evt.target.errorCode}`);
-        }
+                var store = db.transaction("settings", "readonly").objectStore("settings");
+                var req = store.get(name);
+                req.onsuccess = function(evt) {
+                        var setting = evt.target.result;
+                        if (setting)
+                                resolve(setting.value);
+                        else
+                                resolve(null);
+                };
+                req.onerror = function(evt) {
+                        reject(`Error getting setting ${evt.target.errorCode}`);
+                };
         }));
 }
 

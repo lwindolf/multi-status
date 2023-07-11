@@ -1,3 +1,5 @@
+// vim: set ts=4 sw=4:
+/*jshint esversion: 8 */
 
 var cacheName = 'saas-multi-status';
 var filesToCache = [

@@ -1,3 +1,6 @@
+// vim: set ts=4 sw=4:
+/*jshint esversion: 8 */
+
 /* -------------------------------------------------------------------------
    Filter page handling
    ------------------------------------------------------------------------- */
@@ -39,7 +42,7 @@ async function filterLoad() {
                 e.className = 'status';
                 e.setAttribute('data-nr', nr);
                 e.onclick = filterToggle;
-                filterAdd(e)
+                filterAdd(e);
                 render(e);
-        })
+        });
 }

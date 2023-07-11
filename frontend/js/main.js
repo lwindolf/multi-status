@@ -1,3 +1,6 @@
+// vim: set ts=4 sw=4:
+/*jshint esversion: 8 */
+
 var data;
 var previous;
 var refreshTimer;
@@ -94,7 +97,7 @@ async function refresh() {
                         div.append(e);
                         render(e);
                 }
-        })
+        });
 
         if(refreshTimer)
                 clearTimeout(refreshTimer);
@@ -127,4 +130,4 @@ window.onload = () => {
                 console.error(info);
                 setInfo(info);
         });
-}
+};
