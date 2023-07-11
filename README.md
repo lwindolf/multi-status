@@ -24,7 +24,7 @@ and to create a PR!
 
 ## Setup
 
-Install dependencies:
+Install backend dependencies:
 
     sudo apt-get install libjson-perl libxml-feed-perl
 
@@ -34,6 +34,7 @@ Run backend updater
     
 Serve frontend for testing with
 
+    ln -s frontend multi-status
     python3 -m http.server
 
 and access `http://localhost:8000/multi-status`
