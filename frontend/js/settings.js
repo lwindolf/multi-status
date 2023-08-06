@@ -5,16 +5,16 @@
    Persistent settings using IndexedDB
    ------------------------------------------------------------------------- */
 
-var db;
+var _settingsDb;
 
 function _settingsDBOpen() {
         return new Promise((resolve, reject) => {
-                if (db)
+                if (_settingsDb)
                         resolve();
 
                 var req = indexedDB.open("settings", 1);
                 req.onsuccess = function (evt) {
-                        db = this.result;
+                        _settingsDb = this.result;
                         resolve();
                 };
 
@@ -23,16 +23,16 @@ function _settingsDBOpen() {
                 };
         
                 req.onupgradeneeded = function (evt) {
-                        db = evt.currentTarget.result;
+                        _settingsDb = evt.currentTarget.result;
                         console.log("IndexedDB onupgradeneeded");
-                        var store = db.createObjectStore("settings", { keyPath: 'id', autoIncrement: true });
+                        var store = _settingsDb.createObjectStore("settings", { keyPath: 'id', autoIncrement: true });
                 };
         });
 }
 
 function settingsGet(name) {
         return _settingsDBOpen().then(() => new Promise((resolve, reject) => {
-                var store = db.transaction("settings", "readonly").objectStore("settings");
+                var store = _settingsDb.transaction("settings", "readonly").objectStore("settings");
                 var req = store.get(name);
                 req.onsuccess = function(evt) {
                         var setting = evt.target.result;
@@ -49,7 +49,7 @@ function settingsGet(name) {
 
 function settingsSet(name, value) {
         return _settingsDBOpen().then(() => new Promise((resolve, reject) => {
-                var store = db.transaction("settings", "readwrite").objectStore("settings");
+                var store = _settingsDb.transaction("settings", "readwrite").objectStore("settings");
                 var req;
                 try {
                         req = store.put({id: name, "value": value});

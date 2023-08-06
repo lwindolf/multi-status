@@ -30,7 +30,7 @@ Install backend dependencies:
 
 Run backend updater
 
-    ./backend/update.pl > data.json
+    ./backend/update.pl > ./frontend/data.json
     
 Serve frontend for testing with
 

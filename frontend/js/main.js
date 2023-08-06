@@ -17,17 +17,22 @@ function getStatus(s) {
 function getDetails(s) {
         var result = `<div class='name'>${s.name}</div> [ <a href="${s.url}">Status Page</a> ] [ <a href="${s.feed}">Feed</a> ]`;
 
-        if(s.results.length >0) {
-                result += `<table><thead><tr><th>Date + Title</th><th>Details</th></thead><tbody>`;
-                result += s.results.map(function(obj) {
-                        var time = obj.time;
-                        if(typeof time === 'number')
-                                time = new Date(time*1000).toLocaleString();
-                        return `<tr><td>${time}<br/><br/><b>${obj.title}</b></td><td>${(obj.description !== undefined?obj.description:'')}</td></tr>`;
-                }).join('');
-                result += "</tbody></table>";
+        if(s.fetch === 'OK') {
+                if(s.results.length >0) {
+                        result += `<table><thead><tr><th>Date + Title</th><th>Details</th></thead><tbody>`;
+                        result += s.results.map(function(obj) {
+                                var time = obj.time;
+                                if(typeof time === 'number')
+                                        time = new Date(time*1000).toLocaleString();
+                                return `<tr><td>${time}<br/><br/><b>${obj.title}</b></td><td>${(obj.description !== undefined?obj.description:'')}</td></tr>`;
+                        }).join('');
+                        result += "</tbody></table>";
+                } else {
+                        result += "<p>No recent problems reported by status feed.</p>";
+                }
         } else {
-                result += "<p>No recent problems reported by status feed.</p>";
+                result += `<p>Status feed fetching failed: ${s.details}</p>`;
+                result += `<p>You might want to test the 'Feed' link above. If it works and the problem persists please <a href="https://github.com/lwindolf/multi-status/issues">report a bug</a>!</p>`;
         }
         return result;
 }
@@ -112,10 +117,8 @@ function userRefresh() {
 window.onload = () => {
         'use strict';
 
-        if ('serviceWorker' in navigator) {
-          navigator.serviceWorker
-                   .register('./worker.js');
-        }
+        if('serviceWorker' in navigator)
+                navigator.serviceWorker.register('./worker.js');
 
         settingsGet('filter').then((value) => {
                 filter = JSON.parse(value);
