@@ -395,7 +395,7 @@
   "GitLab": {
     "feed": "https://status.gitlab.com/pages/5b36dc6502d06804c08349f7/rss"
   },
-  "OVHloud": {
+  "OVHcloud": {
     "feed": "https://status.us.ovhcloud.com/pages/59dd23da8827c804746f1664/rss"
   },
   "Jira": {
