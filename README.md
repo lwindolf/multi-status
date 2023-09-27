@@ -34,6 +34,8 @@ Run the script from your download location
 
     sudo <path-to-script>/install_multi-status.sh
 
+...OR...
+
 ## Manual Setup
 
 Choose a location to clone the repo into
