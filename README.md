@@ -15,26 +15,69 @@ Currently the following providers status pages are supported:
 If you are missing a status page feel free to add it to `conf/feeds.json`
 and to create a PR!
  
-## Todos
+### Todos
 
 - Backend
   - Date normalization
   - Strip bad encodings
   - Option to query only some providers
 
-## Setup
+## Installation Script
 
-Install backend dependencies:
+Download the script https://raw.githubusercontent.com/lwindolf/multi-status/install_multi-status.sh
+
+Make the script executable
+
+    chmod +x <path-to-script>/install_multi-status.sh
+
+Run the script from your download location
+
+    sudo <path-to-script>/install_multi-status.sh
+
+## Manual Setup
+
+Choose a location to clone the repo into
+
+    cd <desired-install-path>
+    git clone https://github.com/lwindolf/multi-status.git
+    
+### Install backend dependencies
 
     sudo apt-get install libjson-perl libxml-feed-perl
 
-Run backend updater
+### Run backend updater
 
-    ./backend/update.pl > ./frontend/data.json
+    cd <path-to-backend>/backend
+    ./update.pl > <path-to-frontend>/frontend/data.json
     
-Serve frontend for testing with
+    
+### Serve frontend for testing with
 
     ln -s frontend multi-status
     python3 -m http.server
 
 and access `http://localhost:8000/multi-status`
+
+### Running multi-status as a service (make sure you modify the --directory path here)
+
+    cat <<EOF | sudo tee /etc/systemd/system/multi-status.service
+    [Unit]
+    Description=Multi-Status Service
+    After=network.target
+    
+    [Service]
+    ExecStart=/usr/bin/python3 -m http.server --directory <path-to>/multi-status
+    WorkingDirectory=/multi-status
+    Restart=always
+    RestartSec=3
+    
+    [Install]
+    WantedBy=multi-user.target
+    EOF
+    
+   #### Reload systemd
+    sudo systemctl daemon-reload
+    
+   #### Start and enable the service
+    sudo systemctl start multi-status
+    sudo systemctl enable multi-status
