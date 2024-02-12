@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/lwindolf/multi-status/actions/workflows/test.yml/badge.svg)](https://github.com/lwindolf/multi-status/actions/workflows/test.yml)
+
 ![Screenshot](screenshot.png)
 
 # About
