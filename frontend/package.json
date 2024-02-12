@@ -1,0 +1,10 @@
+{
+  "name": "multi-status-frontend",
+  "scripts": {
+    "test": "eslint . --ext js",
+    "start": "npx serve -S -c ../.serve.json"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  }
+}
