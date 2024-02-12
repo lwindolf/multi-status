@@ -1,15 +1,17 @@
 // vim: set ts=4 sw=4:
 /*jshint esversion: 8 */
 
-var cacheName = 'saas-multi-status';
+var cacheName = 'saas-multi-status2';
 var filesToCache = [
   '/multi-status/',
   '/multi-status/index.html',
   '/multi-status/about.html',
-  '/multi-status/filter.html',
+  '/multi-status/settings.html',
   '/multi-status/css/style.css',
   '/multi-status/js/main.js',
-  '/multi-status/js/filter.js',
+  '/multi-status/js/MultiStatus.js',
+  '/multi-status/js/MultiStatusCloud.js',
+  '/multi-status/js/MultiStatusSettings.js',
   '/multi-status/js/settings.js'
 ];
 

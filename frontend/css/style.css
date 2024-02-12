@@ -59,7 +59,7 @@ html,
   font-size: 1.5rem;  
 }
 
-#date {
+.date {
   margin: 6px 0 32px 0;
   filter: brightness(50%);
   font-size: 0.8rem;
@@ -71,14 +71,15 @@ html,
 
 #menu {
   margin-top: 36px;
+  margin-bottom: 12px;
 }
 
-#multistatus {
+#multistatus, x-multistatus-cloud {
   margin: 12px;
   margin-bottom: 24px;
 }
 
-#multistatus div.status {
+div.status {
   display: inline-block;
   box-sizing: border-box;
   padding-top: 0.3em;
@@ -107,6 +108,7 @@ div.status.details {
 }
 
 .details table {
+  width: 100%;
   border-spacing: 0;
   border-collapse: collapse;
   margin: 6px 0;

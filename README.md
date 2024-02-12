@@ -30,11 +30,11 @@ Install backend dependencies:
 
 Run backend updater
 
-    ./backend/update.pl > ./frontend/data.json
-    
+    cd backend
+    ./update.pl >../frontend/data.json
+
 Serve frontend for testing with
 
-    ln -s frontend multi-status
-    python3 -m http.server
-
-and access `http://localhost:8000/multi-status`
+    cd frontend
+    npm i
+    npm start
