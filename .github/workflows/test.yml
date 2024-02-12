@@ -22,4 +22,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: |
-        npm install jshint && npx jshint frontend/*.js frontend/*/*.js
+        cd frontend
+        npm install && npm test
