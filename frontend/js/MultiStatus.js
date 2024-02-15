@@ -12,9 +12,8 @@ class MultiStatus {
         return result;
     }
 
-    static async getData() {
-        // FIXME: read URI from attribute!
-        const response = await fetch(document.location.href.replace(/\/[^/]*$/, "") + "/data.json");
+    static async getData(path = "") {
+        const response = await fetch(path + "data.json");
         return await response.json();
         // FIXME: error handling
     }

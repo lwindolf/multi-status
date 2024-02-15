@@ -8,15 +8,20 @@ import { settingsGet } from "./settings.js";
 class MultiStatusCloud extends HTMLElement {
     // state
     #data;
+    #path;      // path where to find CSS and data.json
+    #reduced;   // true = hide everything that's fine
 
     // shadow dom
     #info;
     #cloud;
 
-    constructor(css = "css/style.css") {
+    constructor() {
         super();
 
         this.attachShadow({ mode: 'open' });
+        console.log(this.shadowRoot.host.dataset.path)
+        this.#path = this.shadowRoot.host.dataset.path;
+        this.#reduced = Number(this.shadowRoot.host.dataset.reduced) == 1;
 
         this.#cloud = document.createElement('div');
         this.#info = document.createElement('span');
@@ -24,7 +29,7 @@ class MultiStatusCloud extends HTMLElement {
 
         const linkElem = document.createElement("link");
         linkElem.setAttribute("rel", "stylesheet");
-        linkElem.setAttribute("href", css);
+        linkElem.setAttribute("href", this.#path + "css/style.css");
 
         this.shadowRoot.append(this.#cloud);
         this.shadowRoot.append(this.#info);
@@ -71,14 +76,23 @@ class MultiStatusCloud extends HTMLElement {
     }
 
     #renderStatus(e) {
-        MultiStatus.renderStatus(e, this.#data.aggregators[e.dataset.nr]);
+        const s = this.#data.aggregators[e.dataset.nr];
+
+        MultiStatus.renderStatus(e, s);
+
+        // Hide all good for reduced mode
+        if(this.#reduced && s.results.length == 0) {
+            e.style.display = 'none';
+        } else {
+            e.style.display = 'inline-block';
+        }
     }
 
     async #update() {
         this.#setInfo('<i>Fetching...</i>');
-
+        
         const filter = await MultiStatus.getFilter();
-        this.#data = await MultiStatus.getData();
+        this.#data = await MultiStatus.getData(this.#path);
 
         this.#setInfo(`Last updated: ${new Date(this.#data.time * 1000).toLocaleString()}`);
 
