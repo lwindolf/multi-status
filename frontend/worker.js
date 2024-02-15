@@ -1,7 +1,9 @@
 // vim: set ts=4 sw=4:
 /*jshint esversion: 8 */
 
-var cacheName = 'saas-multi-status2';
+var cachePrefix = 'saas-multi-status';
+var cacheVersion = 3;
+var cacheName = cachePrefix + '-' + cacheVersion;
 var filesToCache = [
   '/multi-status/',
   '/multi-status/index.html',
@@ -19,8 +21,18 @@ var filesToCache = [
 self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open(cacheName).then(function(cache) {
-      return cache.addAll(filesToCache);
-    })
+      return cache.addAll(filesToCache).then(() => {
+        /* Cleanup deprecated cache versions */
+        caches.keys().then((keyList) => {
+          for(k of keyList) {
+            if(0 == k.indexOf(cachePrefix) && k !== cacheName) {
+              console.log(`Dropping cache version ${k}`);
+              caches.delete(k);
+            }
+          }
+        });
+      });
+    })  
   );
 });
 
