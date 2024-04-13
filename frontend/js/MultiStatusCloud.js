@@ -29,7 +29,7 @@ class MultiStatusCloud extends HTMLElement {
 
         const linkElem = document.createElement("link");
         linkElem.setAttribute("rel", "stylesheet");
-        linkElem.setAttribute("href", this.#path + "css/style.css");
+        linkElem.setAttribute("href", (this.#path?this.#path:'') + "css/style.css");
 
         this.shadowRoot.append(this.#cloud);
         this.shadowRoot.append(this.#info);
@@ -79,13 +79,6 @@ class MultiStatusCloud extends HTMLElement {
         const s = this.#data.aggregators[e.dataset.nr];
 
         MultiStatus.renderStatus(e, s);
-
-        // Hide all good for reduced mode
-        if(this.#reduced && s.results.length == 0) {
-            e.style.display = 'none';
-        } else {
-            e.style.display = 'inline-block';
-        }
     }
 
     async #update() {
@@ -102,11 +95,16 @@ class MultiStatusCloud extends HTMLElement {
             if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
             return 0;
         }).forEach((s, nr) => {
+            // Hide all good for reduced mode
+            if(this.#reduced && s.results.length == 0)
+                return;
+
             if (filter.length == 0 || filter.includes(s.name)) {
                 var e = document.createElement('div');
                 e.className = 'status';
                 e.setAttribute('data-nr', nr);
                 e.onclick = this.toggleDetails;
+                e.style.display = 'inline-block';
                 this.#cloud.append(e);
                 this.#renderStatus(e);
             }
