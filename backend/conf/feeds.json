@@ -451,5 +451,11 @@
   },
   "Office 365": {
     "feed": "https://status.cloud.microsoft/api/feed/mac"
+  },
+  "Paypal": {
+    "feed": "https://www.paypal-status.com/feed/atom"
+  },
+  "Rackspace": {
+    "feed": "https://rss.status.rackspace.com/snow/statusfeed"
   }
 }
