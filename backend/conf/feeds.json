@@ -445,5 +445,8 @@
   },
   "Fastly": {
     "feed": "https://www.fastlystatus.com/rss"
+  },
+  "HubSpot": {
+    "feed": "https://status.hubspot.com/history.atom"
   }
 }
