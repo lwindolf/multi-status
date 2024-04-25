@@ -442,5 +442,8 @@
   },
   "Discord": {
     "feed": "https://discordstatus.com/history.atom"
+  },
+  "Fastly": {
+    "feed": "https://www.fastlystatus.com/rss"
   }
 }
