@@ -436,5 +436,8 @@
   },
   "status.io": {
     "feed": "https://status.status.io/pages/51f6f2088643809b7200000d/rss"
+  },
+  "Ariscloud": {
+    "feed": "https://status-public.ariscloud.com/history.atom"
   }
 }
