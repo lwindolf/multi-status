@@ -8,7 +8,7 @@
   "greenhouse": {
     "feed": "https://greenhouse.statuspage.io/history.atom"
   },
-  "developer": {
+  "Xero": {
     "feed": "https://status.developer.xero.com/history.atom"
   },
   "cloudinary": {
@@ -439,5 +439,8 @@
   },
   "Ariscloud": {
     "feed": "https://status-public.ariscloud.com/history.atom"
+  },
+  "Discord": {
+    "feed": "https://discordstatus.com/history.atom"
   }
 }
