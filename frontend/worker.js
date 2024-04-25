@@ -2,7 +2,7 @@
 /*jshint esversion: 8 */
 
 var cachePrefix = 'saas-multi-status';
-var cacheVersion = 3;
+var cacheVersion = 4;
 var cacheName = cachePrefix + '-' + cacheVersion;
 var filesToCache = [
   '/multi-status/',
@@ -24,6 +24,7 @@ self.addEventListener('install', function(e) {
       return cache.addAll(filesToCache).then(() => {
         /* Cleanup deprecated cache versions */
         caches.keys().then((keyList) => {
+          let k;
           for(k of keyList) {
             if(0 == k.indexOf(cachePrefix) && k !== cacheName) {
               console.log(`Dropping cache version ${k}`);
