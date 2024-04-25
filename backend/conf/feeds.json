@@ -430,5 +430,8 @@
   },
   "IONOS Cloud": {
     "feed": "https://status.ionos.cloud/history.atom"
-  }  
+  },
+  "Hashicorp": {
+    "feed": "https://status.hashicorp.com/history.atom"
+  }
 }
