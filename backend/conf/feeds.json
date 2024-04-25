@@ -448,5 +448,8 @@
   },
   "HubSpot": {
     "feed": "https://status.hubspot.com/history.atom"
+  },
+  "Office 365": {
+    "feed": "https://status.cloud.microsoft/api/feed/mac"
   }
 }
