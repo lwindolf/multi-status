@@ -433,5 +433,8 @@
   },
   "Hashicorp": {
     "feed": "https://status.hashicorp.com/history.atom"
+  },
+  "status.io": {
+    "feed": "https://status.status.io/pages/51f6f2088643809b7200000d/rss"
   }
 }
