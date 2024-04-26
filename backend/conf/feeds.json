@@ -457,5 +457,8 @@
   },
   "Rackspace": {
     "feed": "https://rss.status.rackspace.com/snow/statusfeed"
+  },
+  "Cloudways": {
+    "feed": "https://status.cloudways.com/history.atom"
   }
 }
