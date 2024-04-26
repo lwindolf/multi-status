@@ -460,5 +460,11 @@
   },
   "Cloudways": {
     "feed": "https://status.cloudways.com/history.atom"
+  },
+  "Oracle": {
+    "feed": "https://ocistatus.oraclecloud.com/api/v2/incident-summary.rss"
+  },
+  "Netlify": {
+    "feed": "https://www.netlifystatus.com/history.atom"
   }
 }
