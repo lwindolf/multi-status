@@ -10,6 +10,7 @@ class MultiStatusSettings extends HTMLElement {
     #defaultRefreshInterval = 5;
 
     // state
+    #path;
     #data;
     #filter;
 
@@ -50,6 +51,7 @@ class MultiStatusSettings extends HTMLElement {
         this.shadowRoot.append(settingsDiv);
         this.shadowRoot.appendChild(linkElem);
 
+        this.#path = this.shadowRoot.host.dataset.path;
         this.#selection = this.shadowRoot.getElementById('selection');
         this.#others = this.shadowRoot.getElementById('others');
         this.#interval = this.shadowRoot.getElementById('refreshInterval');
@@ -83,7 +85,7 @@ class MultiStatusSettings extends HTMLElement {
 
     async #settingsLoad() {
         this.#filter = await MultiStatus.getFilter();
-        this.#data = await MultiStatus.getData();
+        this.#data = await MultiStatus.getData(this.#path);
 
         this.#interval.value = await settingsGet('refreshInterval', this.#defaultRefreshInterval);
 

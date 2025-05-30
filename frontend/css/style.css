@@ -1,5 +1,37 @@
+:root, :host {
+  --normalbg: #fff;
+  --darkerbg: #ddd;
+  --borderbg: black;
+  --text-color: #000;
+  --statusText: black;
+  --statusOk: #4c4;
+  --statusIncident: #ffbc40;
+  --status-maintenance-color: #ee0;
+  --status-unknown-color: gray;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root, :host {
+    --normalbg: black;
+    --darkerbg: #444;
+    --borderbg: #777;
+    --text-color: #eee;
+    --statusText: black;
+    --statusOk: #4a4;
+    --statusIncident: #eb8100;
+    --status-maintenance-color: #bb0;
+    --status-unknown-color: #bbb;
+  }
+
+  a {
+    color: #2c84fa;
+  }
+}
+
 body {
   font-family: sans-serif;
+  background-color: var(--normalbg);
+  color: var(--text-color);
 }
 
 h1.title {
@@ -9,17 +41,6 @@ h1.title svg {
   height: 3rem;
   vertical-align: middle;
   margin-right: 6px;
-}
-
-@media (prefers-color-scheme: dark) {
-	body {
-		background-color: #323232;
-		color: #eee;
-	}
-
-  a {
-    color: #2c84fa;
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -82,29 +103,27 @@ html,
 div.status {
   display: inline-block;
   box-sizing: border-box;
-  padding-top: 0.3em;
-  padding-right: 1em;
-  padding-bottom: 0.3em;
-  padding-left: 1em;
-  margin: 0;
+  padding-top: 0.3rem;
+  padding-right: 1rem;
+  padding-bottom: 0.3rem;
+  padding-left: 0.5rem;
+  margin: 0.1rem;
   font-weight: 500;
   line-height: 1.5;
   text-decoration: none;
   vertical-align: baseline;
   cursor: pointer;
-  margin:1px;
-  font-size:0.8em;
+  font-size:0.8rem;
   border-radius: 4px;
-  color: black;
+  color: var(--text-color);
+  background-color: var(--darkerbg);
 }
 
 div.status.details {
   width: 100%;
-}
-
-.status.unknown {
-  background: gray;
-  color: #000;
+  background: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .details table {
@@ -115,16 +134,62 @@ div.status.details {
 }
 
 .details table td,th {
-  border:1px solid #444;
-  background: #eee;
+  border:1px solid var(--borderbg);
   padding: 6px;
 }
 
+.details table tr {
+  background: var(--darkerbg);
+}
+
 #selection, #others {
-  border: 1px solid #eee;
+  border: 1px solid var(--text-color);
   border-radius: 4px;
-  background: #eee;
+  background: var(--normalbg);
   padding: 6px; 
   margin:6px 0;
   min-height: 100px;
+}
+
+div.status.status-ok {
+  padding-left: 1rem;
+  background-color: var(--statusOk);
+  color: var(--statusText);
+}
+
+div.status.status-resolved {
+  border-left: 9px solid var(--statusOk);
+}
+
+div.status.status-incident {
+  border-left: 9px solid var(--statusIncident);
+}
+
+div.status.status-maintenance {
+  border-left: 9px solid var(--status-maintenance-color);
+}
+
+div.status.status-unknown {
+  border-left: 9px solid var(--status-unknown-color);
+}
+
+
+td.status-incident {
+  background: var(--statusIncident);
+  color: var(--statusText);
+}
+
+td.status-resolved {
+  background: var(--statusOk);
+  color: var(--statusText);
+}
+
+td.status-maintenance {
+  background: var(--status-maintenance-color);
+  color: var(--statusText);
+}
+
+td.status-unknown {
+  background: var(--status-unknown-color);
+  color: var(--statusText);
 }

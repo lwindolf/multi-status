@@ -19,7 +19,6 @@ class MultiStatusCloud extends HTMLElement {
         super();
 
         this.attachShadow({ mode: 'open' });
-        console.log(this.shadowRoot.host.dataset.path)
         this.#path = this.shadowRoot.host.dataset.path;
         this.#reduced = Number(this.shadowRoot.host.dataset.reduced) == 1;
 
@@ -56,19 +55,22 @@ class MultiStatusCloud extends HTMLElement {
     }
 
     #toggleDetails(e) {
-        /* close previously open status box */
-        const prev = this.#cloud.querySelector('div.status.details');
-        if(prev) {
-            prev.classList.remove('details');
-            this.#renderStatus(prev);
+        /* We know 2 modes:
+            1. click on status cloud -> hide cloud + show details
+            2. click on status details -> hide details + show cloud
+        */
+        const details = this.#cloud.querySelector('div.status.details');
+        if(details.style.display !== 'inline-block') {
+            const s = this.#data.aggregators[e.dataset.nr];
+            details.classList = "status details";
+            MultiStatus.renderDetails(details, s);
+
+            this.#cloud.querySelectorAll('div.status').forEach((el) => el.style.display = 'none');
+            details.style.display = 'inline-block';
+        } else {
+            this.#cloud.querySelectorAll('div.status').forEach((el) => el.style.display = 'inline-block');
+            details.style.display = 'none';
         }
-
-        /* close on 2nd click */
-        if(e === prev)
-            return;
-
-        e.classList.toggle('details');
-        this.#renderStatus(e);
     }
 
     #setInfo(html) {
@@ -89,7 +91,7 @@ class MultiStatusCloud extends HTMLElement {
 
         this.#setInfo(`Last updated: ${new Date(this.#data.time * 1000).toLocaleString()}`);
 
-        this.#cloud.innerHTML = '';
+        this.#cloud.innerHTML = '<div class="status details" style="display: none;"></div>';
         this.#data.aggregators.sort((a, b) => {
             if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
             if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
