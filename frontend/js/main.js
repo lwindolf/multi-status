@@ -1,7 +1,6 @@
 // vim: set ts=4 sw=4:
 
 import './MultiStatusCloud.js';
-import './MultiStatusSettings.js';
 
 // multi status PWA main
 
