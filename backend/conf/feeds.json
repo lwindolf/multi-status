@@ -469,5 +469,8 @@
   },
   "Webex": {
    "feed": "https://status.webex.com/history.rss"
+  },
+  "Vercel": {
+   "feed": "https://www.vercel-status.com/history.rss"
   }
 }
