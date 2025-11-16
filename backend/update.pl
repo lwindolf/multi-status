@@ -35,7 +35,7 @@ foreach my $a (@{$result{aggregators}}) {
 
 		# Order is important!
 		$r->{status} = 'investigating' if($r->{description} =~ /(investigating|monitoring)/i);
-		$r->{status} = 'resolved' if($r->{description} =~ /(resolved)/i);
+		$r->{status} = 'resolved' if($r->{description} =~ /(resolved|full recovery)/i);
 		$r->{status} = 'completed' if($r->{description} =~ /(completed)/i);
 
 	}
