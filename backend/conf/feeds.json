@@ -472,5 +472,8 @@
   },
   "Vercel": {
    "feed": "https://www.vercel-status.com/history.rss"
+  },
+  "StackIT": {
+    "feed": "https://status.stackit.cloud/history.atom"
   }
 }
