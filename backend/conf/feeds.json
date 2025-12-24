@@ -478,5 +478,8 @@
   },
   "OpenAI": {
     "feed": "https://status.openai.com/feed.atom"
+  },
+  "STACKIT": {
+    "feed": "https://status.stackit.cloud/history.atom"
   }
 }
