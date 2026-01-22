@@ -1,6 +1,6 @@
 {
   "serverdensity": {
-    "feed": "https://status.serverdensity.com/history.atom"
+    "feed": "https://status.density.io/history.atom"
   },
   "bandwidth": {
     "feed": "http://status.bandwidth.com/history.atom"
