@@ -364,7 +364,7 @@
   },
   "opsGenie": {
     "feed": "https://opsgenie.status.atlassian.com/history.atom"
-  }
+  },
   "GitLab": {
     "feed": "https://status.gitlab.com/pages/5b36dc6502d06804c08349f7/rss"
   },
