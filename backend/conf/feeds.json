@@ -20,9 +20,6 @@
   "pubnub": {
     "feed": "http://status.pubnub.com/history.atom"
   },
-  "bigcartel": {
-    "feed": "http://status.bigcartel.com/history.atom"
-  },
   "cloudamqp": {
     "feed": "http://status.cloudamqp.com/history.atom"
   },
