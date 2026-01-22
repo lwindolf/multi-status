@@ -159,7 +159,7 @@
     "feed": "http://status.sharefile.com/history.atom"
   },
   "clojars": {
-    "feed": "http://status.clojars.org/history.atom"
+    "feed": "https://clojars.statuspage.io/history.atom"
   },
   "mediatemple": {
     "feed": "https://status.mediatemple.net/history.atom"
