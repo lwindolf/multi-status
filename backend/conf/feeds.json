@@ -302,8 +302,8 @@
   "typeform": {
     "feed": "http://status.typeform.com/history.atom"
   },
-  "easyredir": {
-    "feed": "https://easyredir.statuspage.io/history.atom"
+  "urllo": {
+    "feed": "https://urllo.statuspage.io/history.atom"
   },
   "breadcrumb": {
     "feed": "http://status.breadcrumb.com/history.atom"
