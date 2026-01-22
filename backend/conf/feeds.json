@@ -152,8 +152,8 @@
   "clojars": {
     "feed": "https://clojars.statuspage.io/history.atom"
   },
-  "mediatemple": {
-    "feed": "https://status.mediatemple.net/history.atom"
+  "godaddy": {
+    "feed": "https://status.godaddy.com/history.atom"
   },
   "salesforceiq": {
     "feed": "https://status.salesforceiq.com/history.atom"
