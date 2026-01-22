@@ -53,9 +53,6 @@
   "rightscale": {
     "feed": "http://status.rightscale.com/history.atom"
   },
-  "pagerduty": {
-    "feed": "https://status.pagerduty.com/history.atom"
-  },
   "redislabs": {
     "feed": "https://status.redislabs.com/history.atom"
   },
