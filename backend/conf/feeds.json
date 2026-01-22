@@ -308,9 +308,6 @@
   "bitrise": {
     "feed": "http://status.bitrise.io/history.atom"
   },
-  "papertrailcom": {
-    "feed": "http://www.papertrailstatus.com/history.atom"
-  },
   "websolr": {
     "feed": "http://status.websolr.com/history.atom"
   },
