@@ -469,5 +469,11 @@
   },
   "gemini": {
     "feed": "https://status.gemini.com/history.atom"
+  },
+  "Splunk": {
+    "feed": "https://status.splunkcloud.com/history.atom"
+  },
+  "SysDig EU": {
+    "feed": "https://status-eu1.sysdig.com/history.atom"
   }
 }
