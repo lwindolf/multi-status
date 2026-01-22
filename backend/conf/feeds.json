@@ -457,5 +457,20 @@
   },
   "rootly": {
     "feed": "https://status.rootly.com/history.atom"
+  },
+  "shopify": {
+    "feed": "https://www.shopifystatus.com/history.atom"
+  },
+  "grafana cloud": {
+    "feed": "https://status.grafana.com/history.atom"
+  },
+  "huggingface": {
+    "feed": "https://status.huggingface.co/feed"
+  },
+  "claude": {
+    "feed": "https://status.claude.com/history.atom"
+  },
+  "gemini": {
+    "feed": "https://status.gemini.com/history.atom"
   }
 }
