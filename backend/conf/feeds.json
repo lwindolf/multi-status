@@ -125,8 +125,8 @@
   "rollbar": {
     "feed": "http://status.rollbar.com/history.atom"
   },
-  "chargify": {
-    "feed": "http://status.chargify.io/history.atom"
+  "maxio": {
+    "feed": "https://maxio.statuspage.io/history.atom"
   },
   "linode": {
     "feed": "https://status.linode.com/history.atom"
