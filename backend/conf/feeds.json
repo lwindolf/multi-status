@@ -478,5 +478,20 @@
   },
   "Sentry": {
     "feed": "https://status.sentry.io/history.atom"
+  },
+  "Scaleway": {
+    "feed": "https://status.scaleway.com/history.atom"
+  },
+  "UpCloud": {
+    "feed": "https://status.upcloud.com/history.atom"
+  },
+  "ExoScale": {
+    "feed": "https://exoscalestatus.com/history.atom"
+  },
+  "GridScale": {
+    "feed": "https://status.gridscale.io/history.atom"
+  },
+  "Proton": {
+    "feed": "https://status.proton.me/history.atom"
   }
 }
