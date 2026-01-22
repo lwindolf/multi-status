@@ -364,10 +364,7 @@
   },
   "opsGenie": {
     "feed": "https://opsgenie.status.atlassian.com/history.atom"
-  },
-  "Twitter": {
-    "feed": "https://status.twitterstat.us/pages/564314ae3309c22c3b0002fa/rss"
-  },
+  }
   "GitLab": {
     "feed": "https://status.gitlab.com/pages/5b36dc6502d06804c08349f7/rss"
   },
