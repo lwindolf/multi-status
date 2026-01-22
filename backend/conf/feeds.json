@@ -77,9 +77,6 @@
   "clearbit": {
     "feed": "http://status.clearbit.com/history.atom"
   },
-  "brightpearl": {
-    "feed": "https://status.brightpearl.com/history.atom"
-  },
   "fullcontact": {
     "feed": "https://status.fullcontact.com/history.atom"
   },
