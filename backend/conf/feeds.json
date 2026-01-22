@@ -493,5 +493,11 @@
   },
   "Proton": {
     "feed": "https://status.proton.me/history.atom"
+  },
+  "Quad9": {
+    "feed": "https://uptime.quad9.net/history.atom"
+  },
+  "klarna": {
+    "feed": "https://status.klarna.com/history.atom"
   }
 }
