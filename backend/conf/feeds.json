@@ -369,7 +369,7 @@
     "feed": "https://status.cloud.google.com/feed.atom"
   },
   "Heroku": {
-    "feed": "https://feeds.feedburner.com/HerokuStatus"
+    "feed": "https://status.heroku.com/feed"
   },
   "opsGenie": {
     "feed": "https://opsgenie.status.atlassian.com/history.atom"
