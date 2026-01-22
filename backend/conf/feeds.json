@@ -206,9 +206,6 @@
   "plivo": {
     "feed": "https://status.plivo.com/history.atom"
   },
-  "maxcdn": {
-    "feed": "https://status.maxcdn.com/history.atom"
-  },
   "bitbucket": {
     "feed": "https://status.bitbucket.org/history.atom"
   },
