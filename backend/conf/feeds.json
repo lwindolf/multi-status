@@ -278,9 +278,6 @@
   "codeclimate": {
     "feed": "http://status.codeclimate.com/history.atom"
   },
-  "graphenedb": {
-    "feed": "http://status.graphenedb.com/history.atom"
-  },
   "incapsula": {
     "feed": "https://status.incapsula.com/history.atom"
   },
