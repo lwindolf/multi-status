@@ -77,9 +77,6 @@
   "clearbit": {
     "feed": "http://status.clearbit.com/history.atom"
   },
-  "fullcontact": {
-    "feed": "https://status.fullcontact.com/history.atom"
-  },
   "newrelic": {
     "feed": "https://status.newrelic.com/history.atom"
   },
