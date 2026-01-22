@@ -478,5 +478,8 @@
   },
   "STACKIT": {
     "feed": "https://status.stackit.cloud/history.atom"
+  },
+  "rootly": {
+    "feed": "https://status.rootly.com/history.atom"
   }
 }
