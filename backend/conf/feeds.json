@@ -305,9 +305,6 @@
   "easyredir": {
     "feed": "https://easyredir.statuspage.io/history.atom"
   },
-  "dyncom": {
-    "feed": "https://www.dynstatus.com/history.atom"
-  },
   "breadcrumb": {
     "feed": "http://status.breadcrumb.com/history.atom"
   },
