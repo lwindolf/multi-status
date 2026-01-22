@@ -475,5 +475,8 @@
   },
   "SysDig EU": {
     "feed": "https://status-eu1.sysdig.com/history.atom"
+  },
+  "Sentry": {
+    "feed": "https://status.sentry.io/history.atom"
   }
 }
