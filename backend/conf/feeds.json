@@ -207,7 +207,7 @@
     "feed": "https://status.bitbucket.org/history.atom"
   },
   "recurly": {
-    "feed": "https://status.recurly.com/history.atom"
+    "feed": "https://status.recurly.com/statuspage/recurly/subscribe/rss"
   },
   "imgix": {
     "feed": "https://status.imgix.com/history.atom"
