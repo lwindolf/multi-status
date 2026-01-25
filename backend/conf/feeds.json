@@ -221,9 +221,6 @@
   "scoutapp": {
     "feed": "https://status.scoutapp.com/history.atom"
   },
-  "hashicorp": {
-    "feed": "https://status.hashicorp.com/history.atom"
-  },
   "binarylane": {
     "feed": "http://status.binarylane.com.au/history.atom"
   },
