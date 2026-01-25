@@ -61,6 +61,9 @@ for (const k of keys) {
 		name: k
 	};
 
+	if (!status.results)
+		status.results = [];
+	
 	if (!status.url)
 		status.url = status.feed.replace(/\/[^/]+$/, '');
 
