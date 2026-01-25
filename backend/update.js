@@ -10,7 +10,7 @@ let result = {
 	aggregators: []
 };
 const config = JSON.parse(fs.readFileSync('conf/feeds.json', 'utf8'));
-const oneDayAgo = Date.now()/1000 - 24 * 60 * 60 * 1000;
+const oneDayAgo = Date.now()/1000 - 24 * 60 * 60;
 const outputFile = process.argv[2];
 if (!outputFile) {
 	console.error('ERROR: Syntax: update.js <output JSON file name>');
