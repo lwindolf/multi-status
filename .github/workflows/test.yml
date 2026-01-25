@@ -22,5 +22,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: |
+        git submodule init
+        git submodule update
+    - run: |
         cd frontend
+        npm install && npm test
+    - run: |
+        cd backend
         npm install && npm test

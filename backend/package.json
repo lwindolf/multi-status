@@ -1,0 +1,13 @@
+{
+        "name": "multi-status-backend",
+        "version": "0.1",
+        "main": "update.js",
+        "type": "module",
+        "dependencies": {
+                "jsdom": "^22.1.0",
+                "node-fetch":"^3.3.2"
+        }, 
+        "scripts": {
+                "start": "node update.js"
+        }
+}

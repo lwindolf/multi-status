@@ -1,0 +1,3 @@
+[submodule "lzone-feed-parser"]
+	path = lzone-feed-parser
+	url = https://github.com/lwindolf/lzone-feed-parser
