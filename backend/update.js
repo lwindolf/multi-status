@@ -123,7 +123,7 @@ fs.writeFileSync(`${outputDir}/status.json`, JSON.stringify({
 			"Website": "https://lzone.de/multi-status",
 			"Source": "https://github.com/lwindolf/multi-status"
 		},
-		icon: "https://lzone.de/multi-status/health+pulse+status+icon.png"
+		favicon: "https://lzone.de/multi-status/health+pulse+status+icon.png"
 	},
         data: {
             feeds     : result.aggregators.length
