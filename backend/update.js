@@ -11,11 +11,12 @@ let result = {
 };
 const config = JSON.parse(fs.readFileSync('conf/feeds.json', 'utf8'));
 const oneDayAgo = Date.now()/1000 - 24 * 60 * 60;
-const outputFile = process.argv[2];
-if (!outputFile) {
-	console.error('ERROR: Syntax: update.js <output JSON file name>');
+const outputDir = process.argv[2];
+if (!outputDir) {
+	console.error('ERROR: Syntax: update.js <output directory>');
 	process.exit(1);
 }
+const outputFile = `${outputDir}/data.json`;
 
 function parse(url, data) {
 	let status = {
@@ -112,3 +113,24 @@ result.aggregators.forEach(a => {
 
 fs.writeFileSync(outputFile, JSON.stringify(result, null, 2));
 
+// finally write a status.json
+const now = Math.ceil(new Date().getTime() / 1000);
+const updateInterval = 15*60;
+fs.writeFileSync(`${outputDir}/status.json`, JSON.stringify({
+	meta: {
+		name: "Multi Status Update",
+		links: {
+			"Website": "https://lzone.de/multi-status",
+			"Source": "https://github.com/lwindolf/multi-status"
+		}
+	},
+        data: {
+            feeds     : result.aggregators.length
+        },
+        schedule: {
+            lastUpdate : now,
+            refresh    : updateInterval,
+            nextRun    : updateInterval + now,
+            maxAge     : updateInterval * 2
+        }
+}), null, 2);

@@ -36,7 +36,7 @@ Run backend updater
 
     cd backend
     npm i
-    ./update.js ../frontend/data.json
+    ./update.js ../frontend/
 
 Serve frontend for testing with
 
