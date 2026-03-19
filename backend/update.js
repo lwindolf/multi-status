@@ -66,9 +66,12 @@ function parse(url, data) {
 	return status;
 }
 
+let i = 0;
 const keys = Object.keys(config).sort();
 for (const k of keys) {
 	const url = config[k].feed;
+	console.log(`Processing (${++i}/${keys.length}) ${url}`);
+
 	const data = await fetch(url).then(res => res.text()).catch(() => null);
 	let status = parse(url, data);
 	status = {
