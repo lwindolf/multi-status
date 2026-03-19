@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+        <head>
+                <title>Multi Status Page Blogroll</title>
+                <ownerName>Lars Windolf</ownerName>
+                <ownerId>https://lzone.de/multi-status</ownerId>
+                <dateCreated>2026-03-19</dateCreated>
+                <dateModified>2026-03-19</dateModified>
+        </head>
+        <body>
+                <outline text="Communications">
+                        <outline type="rss" text="bandwidth" xmlUrl="http://status.bandwidth.com/history.atom"/>
+                        <outline type="rss" text="talkdesk" xmlUrl="http://status.talkdesk.com/history.atom"/>
+                        <outline type="rss" text="callfire" xmlUrl="http://status.callfire.com/history.atom"/>
+                        <outline type="rss" text="zoom" xmlUrl="https://status.zoom.us/history.atom"/>
+                        <outline type="rss" text="cxengage" xmlUrl="http://status.cxengage.com/history.atom"/>
+                        <outline type="rss" text="dialpad" xmlUrl="https://status.dialpad.com/history.atom"/>
+                        <outline type="rss" text="plivo" xmlUrl="https://status.plivo.com/history.atom"/>
+                        <outline type="rss" text="lifesizecloud" xmlUrl="http://status.lifesizecloud.com/history.atom"/>
+                        <outline type="rss" text="discord" xmlUrl="https://discord.statuspage.io/history.atom"/>
+                        <outline type="rss" text="twilio" xmlUrl="https://twilio.statuspage.io/history.atom"/>
+                        <outline type="rss" text="Discord" xmlUrl="https://discordstatus.com/history.atom"/>
+                        <outline type="rss" text="Webex" xmlUrl="https://status.webex.com/history.rss"/>
+                        <outline type="rss" text="Slack" xmlUrl="https://status.slack.com/feed/atom"/>
+                        <outline type="rss" text="goto" xmlUrl="https://status.goto.com/history.atom?lng=en-US"/>
+                </outline>
+                <outline text="Cloud">
+                        <outline type="rss" text="rightscale" xmlUrl="http://status.rightscale.com/history.atom"/>
+                        <outline type="rss" text="linode" xmlUrl="https://status.linode.com/history.atom"/>
+                        <outline type="rss" text="CloudSigma" xmlUrl="http://status.cloudsigma.com/history.atom"/>
+                        <outline type="rss" text="digitalocean" xmlUrl="https://status.digitalocean.com/history.atom"/>
+                        <outline type="rss" text="binarylane" xmlUrl="http://status.binarylane.com.au/history.atom"/>
+                        <outline type="rss" text="AWS" xmlUrl="https://status.aws.amazon.com/rss/all.rss"/>
+                        <outline type="rss" text="Redhat" xmlUrl="https://status.redhat.com/history.atom"/>
+                        <outline type="rss" text="OVHcloud" xmlUrl="https://status.us.ovhcloud.com/pages/59dd23da8827c804746f1664/rss"/>
+                        <outline type="rss" text="hetzner" xmlUrl="https://status.hetzner.com/de.atom"/>
+                        <outline type="rss" text="IONOS Cloud" xmlUrl="https://status.ionos.cloud/history.atom"/>
+                        <outline type="rss" text="Ariscloud" xmlUrl="https://status-public.ariscloud.com/history.atom"/>
+                        <outline type="rss" text="Rackspace" xmlUrl="https://rss.status.rackspace.com/snow/statusfeed"/>
+                        <outline type="rss" text="Oracle" xmlUrl="https://ocistatus.oraclecloud.com/api/v2/incident-summary.rss"/>
+                        <outline type="rss" text="STACKIT" xmlUrl="https://status.stackit.cloud/history.atom"/>
+                        <outline type="rss" text="Scaleway" xmlUrl="https://status.scaleway.com/history.atom"/>
+                        <outline type="rss" text="UpCloud" xmlUrl="https://status.upcloud.com/history.atom"/>
+                        <outline type="rss" text="ExoScale" xmlUrl="https://exoscalestatus.com/history.atom"/>
+                        <outline type="rss" text="GridScale" xmlUrl="https://status.gridscale.io/history.atom"/>
+                        <outline type="rss" text="pantheon" xmlUrl="https://status.pantheon.io/history.atom"/>
+                        <outline type="rss" text="godaddy" xmlUrl="https://status.godaddy.com/history.atom"/>
+                        <outline type="rss" text="servint" xmlUrl="https://servint.statuspage.io/history.atom"/>
+                        <outline type="rss" text="gearhost" xmlUrl="https://gearhost.statuspage.io/history.atom"/>
+                        <outline type="rss" text="engineyard" xmlUrl="https://engineyard.statuspage.io/history.atom"/>
+                        <outline type="rss" text="Heroku" xmlUrl="https://status.heroku.com/feed"/>
+                        <outline type="rss" text="Cloudways" xmlUrl="https://status.cloudways.com/history.atom"/>
+                        <outline type="rss" text="Netlify" xmlUrl="https://www.netlifystatus.com/history.atom"/>
+                        <outline type="rss" text="Vercel" xmlUrl="https://www.vercel-status.com/history.rss"/>
+                        <outline type="rss" text="duo" xmlUrl="https://status.duo.com/history.atom"/>
+                        <outline type="rss" text="rapid7" xmlUrl="https://status.rapid7.com/history.atom"/>
+                        <outline type="rss" text="incapsula" xmlUrl="https://status.incapsula.com/history.atom"/>
+                        <outline type="rss" text="lastpass" xmlUrl="https://status.lastpass.com/history.atom"/>
+                        <outline type="rss" text="letsencrypt" xmlUrl="https://letsencrypt.status.io/pages/55957a99e800baa4470002da/rss"/>
+                        <outline type="rss" text="typeform" xmlUrl="http://status.typeform.com/history.atom"/>
+                        <outline type="rss" text="urllo" xmlUrl="https://urllo.statuspage.io/history.atom"/>
+                        <outline type="rss" text="instapage" xmlUrl="https://status.instapage.com/history.atom"/>
+                        <outline type="rss" text="HubSpot" xmlUrl="https://status.hubspot.com/history.atom"/>
+                        <outline type="rss" text="coinbase" xmlUrl="https://coinbase.statuspage.io/history.atom"/>
+                        <outline type="rss" text="zoho" xmlUrl="https://status.zoho.com/rss"/>
+
+                        <outline text="Google">
+                                <outline type="rss" text="Google Cloud" xmlUrl="https://status.cloud.google.com/feed.atom"/>
+                                <outline type="rss" text="Google Ads" xmlUrl="https://ads.google.com/status/publisher/de/feed.atom"/>
+                                <outline type="rss" text="Google Workspace" xmlUrl="https://www.google.com/appsstatus/dashboard/de/feed.atom"/>
+                        </outline>
+
+                        <outline text="Microsoft">
+                                <outline type="rss" text="Azure" xmlUrl="https://azurestatuscdn.azureedge.net/en-us/status/feed/"/>
+                                <outline type="rss" text="Azure DevOps" xmlUrl="https://status.dev.azure.com/_rss"/>
+                                <outline type="rss" text="Office 365" xmlUrl="https://status.cloud.microsoft/api/feed/mac"/>
+                        </outline>
+
+                        <outline text="Automation">
+                                <outline type="rss" text="zapier" xmlUrl="https://status.zapier.com/history.atom"/>
+                                <outline type="rss" text="ifttt" xmlUrl="http://status.ifttt.com/history.atom"/>
+                        </outline>
+
+                        <outline text="E-commerce">
+                                <outline type="rss" text="shopify" xmlUrl="https://www.shopifystatus.com/history.atom"/>
+                                <outline type="rss" text="Paypal" xmlUrl="https://www.paypal-status.com/feed/atom"/>
+                                <outline type="rss" text="klarna" xmlUrl="https://status.klarna.com/history.atom"/>
+                                <outline type="rss" text="stripe" xmlUrl="https://www.stripestatus.com/history.atom"/>
+                                <outline type="rss" text="shopkeep" xmlUrl="http://status.shopkeep.com/history.atom"/>
+                                <outline type="rss" text="breadcrumb" xmlUrl="http://status.breadcrumb.com/history.atom"/>
+                                <outline type="rss" text="maxio" xmlUrl="https://maxio.statuspage.io/history.atom"/>
+                                <outline type="rss" text="recurly" xmlUrl="https://status.recurly.com/statuspage/recurly/subscribe/rss"/>
+
+                                <outline text="CRM">
+                                        <outline type="rss" text="redtailtechnology" xmlUrl="http://status.redtailtechnology.com/history.atom"/>
+                                        <outline type="rss" text="salesforceiq" xmlUrl="https://status.salesforceiq.com/history.atom"/>
+                                </outline>
+                        </outline>
+
+                        <outline text="Search">
+                                <outline type="rss" text="bonsai" xmlUrl="https://status.bonsai.io/history.atom"/>
+                                <outline type="rss" text="websolr" xmlUrl="http://status.websolr.com/history.atom"/>
+                                <outline type="rss" text="Google Search" xmlUrl="https://status.search.google.com/en/feed.atom"/>
+                                <outline type="rss" text="elastic.co" xmlUrl="https://status.elastic.co/history.atom"/>
+                        </outline>
+                        <outline text="Storage">
+                                <outline type="rss" text="sharefile" xmlUrl="http://status.sharefile.com/history.atom"/>
+                                <outline type="rss" text="dropbox" xmlUrl="https://status.dropbox.com/history.atom"/>
+                                <outline type="rss" text="box" xmlUrl="https://status.box.com/history.atom"/>
+                        </outline>
+
+                        <outline text="DNS">
+                                <outline type="rss" text="dnsimple" xmlUrl="https://dnsimple.statuspage.io/history.atom"/>
+                                <outline type="rss" text="NS1 Connect" xmlUrl="https://status.ai-apps-comms.ibm.com/feed/iotm/api/v1/feedtype/rss/environment/jydaDOyJXCqsYwZxmbwUTg%3D%3D/servicetype/default/rss.xml"/>
+                                <outline type="rss" text="Quad9" xmlUrl="https://uptime.quad9.net/history.atom"/>
+                        </outline>
+                        <outline text="Status Page">
+                                <outline type="rss" text="metastatuspage" xmlUrl="http://metastatuspage.com/history.atom"/>
+                                <outline type="rss" text="status.io" xmlUrl="https://status.status.io/pages/51f6f2088643809b7200000d/rss"/>
+                                <outline type="rss" text="statuscast" xmlUrl="https://status.statuscast.com/rss"/>
+                        </outline>
+                        <outline text="CDN">
+                                <outline type="rss" text="cloudflarecom" xmlUrl="https://www.cloudflarestatus.com/history.atom"/>
+                                <outline type="rss" text="cdnjs" xmlUrl="https://status.cdnjs.com/history.atom"/>
+                                <outline type="rss" text="Akamai Edge" xmlUrl="https://www.akamaistatus.com/history.atom"/>
+                                <outline type="rss" text="Fastly" xmlUrl="https://www.fastlystatus.com/rss"/>
+                        </outline>
+                        <outline text="Messaging">
+                                <outline type="rss" text="pubnub" xmlUrl="http://status.pubnub.com/history.atom"/>
+                                <outline type="rss" text="cloudamqp" xmlUrl="http://status.cloudamqp.com/history.atom"/>
+                                <outline type="rss" text="getstream" xmlUrl="http://status.getstream.io/history.atom"/>
+                                <outline type="rss" text="bigwig" xmlUrl="http://bigwig.statuspage.io/history.atom"/>
+                                <outline type="rss" text="pusher" xmlUrl="https://status.pusher.com/history.atom"/>
+                        </outline>              
+
+                        <outline text="IAM">
+                                <outline type="rss" text="jumpcloud" xmlUrl="http://status.jumpcloud.com/history.atom"/>
+                                <outline type="rss" text="okta" xmlUrl="https://feeds.feedburner.com/OktaTrustRSS"/>
+                        </outline>
+                        <outline text="Email">
+                                <outline type="rss" text="sendwithus" xmlUrl="https://status.sendwithus.com/history.atom"/>
+                                <outline type="rss" text="kickbox" xmlUrl="http://status.kickbox.io/history.atom"/>
+                                <outline type="rss" text="sendgrid" xmlUrl="http://status.sendgrid.com/history.atom"/>
+                                <outline type="rss" text="sparkpost" xmlUrl="https://status.sparkpost.com/history.atom"/>
+                        </outline>
+                        <outline text="Analytics">
+                                <outline type="rss" text="geckoboard" xmlUrl="https://geckoboard.statuspage.io/history.atom"/>
+                                <outline type="rss" text="modeanalytics" xmlUrl="http://status.modeanalytics.com/history.atom"/>
+                                <outline type="rss" text="keen" xmlUrl="http://status.keen.io/history.atom"/>
+                                <outline type="rss" text="heapanalytics" xmlUrl="http://status.heapanalytics.com/history.atom"/>
+                                <outline type="rss" text="baremetrics" xmlUrl="http://status.baremetrics.com/history.atom"/>
+                                <outline type="rss" text="chartbeat" xmlUrl="https://chartbeat.statuspage.io/history.atom"/>
+                                <outline type="rss" text="segment" xmlUrl="https://status.segment.com/history.atom"/>
+                        </outline>
+                        <outline text="Monitoring">
+                                <outline type="rss" text="serverdensity" xmlUrl="https://status.density.io/history.atom"/>
+                                <outline type="rss" text="newrelic" xmlUrl="https://status.newrelic.com/history.atom"/>
+                                <outline type="rss" text="catchpoint" xmlUrl="http://status.catchpoint.com/history.atom"/>
+                                <outline type="rss" text="deadmanssnitch" xmlUrl="http://status.deadmanssnitch.com/history.atom"/>
+                                <outline type="rss" text="rollbar" xmlUrl="http://status.rollbar.com/history.atom"/>
+                                <outline type="rss" text="skylight" xmlUrl="http://status.skylight.io/history.atom"/>
+                                <outline type="rss" text="librato" xmlUrl="https://status.librato.com/history.atom"/>
+                                <outline type="rss" text="scoutapp" xmlUrl="https://status.scoutapp.com/history.atom"/>
+                                <outline type="rss" text="datadog" xmlUrl="https://datadog.statuspage.io/history.atom"/>
+                                <outline type="rss" text="datadoghq" xmlUrl="https://status.datadoghq.com/history.atom"/>
+                                <outline type="rss" text="airbrake" xmlUrl="https://status.airbrake.io/history.atom"/>
+                                <outline type="rss" text="Sentry" xmlUrl="https://status.sentry.io/history.atom"/>
+                                <outline type="rss" text="grafana cloud" xmlUrl="https://status.grafana.com/history.atom"/>
+                                <outline type="rss" text="dynatrace" xmlUrl="https://dynatrace.status.io/pages/546d8cb6af8407b6730000cb/rss"/>
+                                <outline type="rss" text="SysDig EU" xmlUrl="https://status-eu1.sysdig.com/history.atom"/>
+                        </outline>
+                        <outline text="Remote Access">
+                                <outline type="rss" text="splashtop" xmlUrl="http://status.splashtop.com/history.atom"/>
+                        </outline>
+                        <outline text="Logging / SIEM">
+                                <outline type="rss" text="Splunk" xmlUrl="https://status.splunkcloud.com/history.atom"/>
+                                <outline type="rss" text="sumo logic" xmlUrl="https://status.sumologic.com/pages/5ea1c7ba3f2f1604b93ca38e/rss"/>
+                                <outline type="rss" text="loggly" xmlUrl="http://status.loggly.com/history.atom"/>
+                        </outline>
+                </outline>
+                
+                <outline text="AI">
+                        <outline type="rss" text="clarifai" xmlUrl="http://status.clarifai.com/history.atom"/>
+                        <outline type="rss" text="OpenAI" xmlUrl="https://status.openai.com/feed.atom"/>
+                        <outline type="rss" text="huggingface" xmlUrl="https://status.huggingface.co/feed"/>
+                        <outline type="rss" text="claude" xmlUrl="https://status.claude.com/history.atom"/>
+                        <outline type="rss" text="gemini" xmlUrl="https://status.gemini.com/history.atom"/>
+                </outline>
+
+                <outline text="DevOps">
+                        <outline type="rss" text="chef" xmlUrl="https://status.chef.io/history.atom"/>
+                        <outline type="rss" text="Hashicorp" xmlUrl="https://status.hashicorp.com/history.atom"/>
+                        <outline type="rss" text="iron" xmlUrl="https://status.iron.io/history.atom"/>
+                        <outline type="rss" text="Docker" xmlUrl="https://www.dockerstatus.com/pages/533c6539221ae15e3f000031/rss"/>
+                        <outline type="rss" text="quay.io" xmlUrl="https://status.quay.io/history.atom"/>
+                        <outline type="rss" text="split" xmlUrl="https://status.split.io/history.atom"/>
+
+                        <outline type="rss" text="Python" xmlUrl="https://status.python.org/history.atom"/>
+                        <outline type="rss" text="npmjs" xmlUrl="https://status.npmjs.org/history.atom"/>
+                        <outline type="rss" text="rubygems" xmlUrl="https://status.rubygems.org/history.atom"/>
+                        <outline type="rss" text="clojars" xmlUrl="https://clojars.statuspage.io/history.atom"/>
+                        <outline type="rss" text="artifactoryonline" xmlUrl="http://status.artifactoryonline.com/history.atom"/>
+                        <outline type="rss" text="launchpad" xmlUrl="https://launchpad.statuspage.io/history.atom"/>
+                        <outline type="rss" text="maven" xmlUrl="https://status.maven.org/history.atom"/>
+                        <outline type="rss" text="Confluence" xmlUrl="https://confluence.status.atlassian.com/history.atom"/>
+
+                        <outline text="CI/CD">
+                                <outline type="rss" text="TravisCI" xmlUrl="https://www.traviscistatus.com/history.atom"/>
+                                <outline type="rss" text="circleci" xmlUrl="https://circleci.statuspage.io/history.atom"/>
+                                <outline type="rss" text="codeship" xmlUrl="http://codeship.statuspage.io/history.atom"/>
+                                <outline type="rss" text="bitrise" xmlUrl="http://status.bitrise.io/history.atom"/>
+                        </outline>
+                        <outline text="Testing">
+                                <outline type="rss" text="saucelabs" xmlUrl="https://status.saucelabs.com/history.atom"/>
+                                <outline type="rss" text="sitespect" xmlUrl="http://status.sitespect.com/history.atom"/>
+                                <outline type="rss" text="loader" xmlUrl="http://status.loader.io/history.atom"/>
+                                <outline type="rss" text="optimizely" xmlUrl="http://status.optimizely.com/history.atom"/>
+                        </outline>
+
+                        <outline text="git Hosting">
+                                <outline type="rss" text="bitbucket" xmlUrl="https://status.bitbucket.org/history.atom"/>
+                                <outline type="rss" text="Github" xmlUrl="https://www.githubstatus.com/history.atom"/>
+                                <outline type="rss" text="GitLab" xmlUrl="https://status.gitlab.com/pages/5b36dc6502d06804c08349f7/rss"/>
+                        </outline>
+                        <outline text="Project Management">
+                                <outline type="rss" text="codetree" xmlUrl="http://status.codetree.com/history.atom"/>
+                                <outline type="rss" text="Jira" xmlUrl="https://jira-software.status.atlassian.com/history.atom"/>
+                        </outline>
+                        <outline text="Incident Management">
+                                <outline type="rss" text="victorops" xmlUrl="https://status.victorops.com/history.atom"/>
+                                <outline type="rss" text="opsGenie" xmlUrl="https://opsgenie.status.atlassian.com/history.atom"/>
+                                <outline type="rss" text="rootly" xmlUrl="https://status.rootly.com/history.atom"/>
+                        </outline>
+                        <outline text="Code Quality">
+                                <outline type="rss" text="codeclimate" xmlUrl="http://status.codeclimate.com/history.atom"/>
+                                <outline type="rss" text="Code Climate" xmlUrl="https://status.codeclimate.com/history.atom"/>
+                                <outline type="rss" text="Sonarcloud" xmlUrl="https://sonarcloud.statuspage.io/history.atom"/>
+                        </outline>
+                </outline>
+
+                <outline text="Other">
+                        <outline type="rss" text="smartsheet" xmlUrl="https://status.smartsheet.com/history.atom"/>
+                        <outline type="rss" text="greenhouse" xmlUrl="https://greenhouse.statuspage.io/history.atom"/>
+                        <outline type="rss" text="Xero" xmlUrl="https://status.developer.xero.com/history.atom"/>
+                        <outline type="rss" text="cloudinary" xmlUrl="https://status.cloudinary.com/history.atom"/>
+                        <outline type="rss" text="imgix" xmlUrl="https://status.imgix.com/history.atom"/>
+                        <outline type="rss" text="syncano" xmlUrl="http://syncano.statuspage.io/history.atom"/>
+                        <outline type="rss" text="runscope" xmlUrl="http://status.runscope.com/history.atom"/>
+                        <outline type="rss" text="stoplight" xmlUrl="http://status.stoplight.io/history.atom"/>
+                        <outline type="rss" text="redislabs" xmlUrl="https://status.redislabs.com/history.atom"/>
+                        <outline type="rss" text="easypost" xmlUrl="https://easypost.statuspage.io/history.atom"/>
+                        <outline type="rss" text="clearbit" xmlUrl="http://status.clearbit.com/history.atom"/>
+                        <outline type="rss" text="Proton" xmlUrl="https://status.proton.me/history.atom"/>
+                        <outline type="rss" text="envoy" xmlUrl="https://status.envoy.com/history.atom"/>
+                        <outline type="rss" text="squarespace" xmlUrl="https://status.squarespace.com/history.atom"/>
+                        <outline type="rss" text="credsimple" xmlUrl="https://status.credsimple.com/history.atom"/>
+                        <outline type="rss" text="helpscout" xmlUrl="https://status.helpscout.net/history.atom"/>
+                </outline>
+        </body>
+</opml>

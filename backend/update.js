@@ -4,12 +4,28 @@ import './init.js';
 import fs from 'fs';
 import fetch from 'node-fetch';
 import { parserAutoDiscover } from './feed-parser/autodiscover.js';
+import { NamespaceParser } from './feed-parser/namespace.js';
+import { XPath } from './feed-parser/xpath.js';
 
 let result = {
 	time: Date.now(),
 	aggregators: []
 };
-const config = JSON.parse(fs.readFileSync('conf/feeds.json', 'utf8'));
+const opmlData = fs.readFileSync('../frontend/feeds.opml', 'utf8');
+const parser = new DOMParser();
+const doc = parser.parseFromString(opmlData, "application/xml");
+const root = NamespaceParser.getRootNode(doc);
+const config = {};
+
+XPath.foreach(root, '/opml/body//outline[@type="rss"]', (item) => {
+	const name = item.getAttribute('title') || item.getAttribute('text');
+	if(!name)
+		return;
+	config[name] = {
+		feed: item.getAttribute('xmlUrl')
+	};
+});
+
 const oneDayAgo = Date.now()/1000 - 24 * 60 * 60;
 const outputDir = process.argv[2];
 if (!outputDir) {
@@ -47,7 +63,6 @@ function parse(url, data) {
 	} catch (err) {
 		return { fetch: "FAILED", details: "Fetch failed!"};
 	}
-
 	return status;
 }
 
