@@ -7,8 +7,11 @@
                 "jsdom": "^22.1.0",
                 "node-fetch":"^3.3.2"
         }, 
+        "config": {
+                "outputDir": "/var/www/multi-status"
+        },
         "scripts": {
-                "start": "node update.js",
+                "start": "node update.js $npm_package_config_outputDir",
                 "systemd-start": "systemctl --user start multi-status-backend.service",
                 "systemd-stop": "systemctl --user stop multi-status-backend.service",
                 "systemd-install": "loginctl enable-linger $USER && mkdir -p ~/.config/systemd/user/ && cp multi-status-backend.service multi-status-backend.timer ~/.config/systemd/user/ && sed -i \"s|REPLACEME_WORKDIR|$(pwd)|\" ~/.config/systemd/user/multi-status-backend.service && systemctl --user daemon-reload && systemctl --user enable --now multi-status-backend.timer",
