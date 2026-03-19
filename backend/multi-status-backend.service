@@ -1,0 +1,11 @@
+[Unit]
+Description=Run multi-status backend updater
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=REPLACEME_WORKDIR
+ExecStart=npm start
+StandardOutput=journal
+StandardError=journal

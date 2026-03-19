@@ -8,6 +8,11 @@
                 "node-fetch":"^3.3.2"
         }, 
         "scripts": {
-                "start": "node update.js"
+                "start": "node update.js",
+                "systemd-start": "systemctl --user start multi-status-backend.service",
+                "systemd-stop": "systemctl --user stop multi-status-backend.service",
+                "systemd-install": "loginctl enable-linger $USER && mkdir -p ~/.config/systemd/user/ && cp multi-status-backend.service multi-status-backend.timer ~/.config/systemd/user/ && sed -i \"s|REPLACEME_WORKDIR|$(pwd)|\" ~/.config/systemd/user/multi-status-backend.service && systemctl --user daemon-reload && systemctl --user enable --now multi-status-backend.timer",
+                "systemd-uninstall": "systemctl --user stop multi-status-backend.service && systemctl --user disable multi-status-backend.service && systemctl --user stop multi-status-backend.timer && systemctl --user disable multi-status-backend.timer && rm ~/.config/systemd/user/multi-status-backend.* && systemctl --user daemon-reload",
+                "systemd-log": "journalctl --user -u multi-status-backend.service -f"
         }
 }

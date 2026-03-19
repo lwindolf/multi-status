@@ -32,11 +32,16 @@ Prepare git repo
     git submodule init
     git submodule update
 
-Run backend updater
+Run backend updater manually
 
     cd backend
     npm i
     ./update.js ../frontend/
+
+Install backend updater as systemd cron
+
+    cd backend
+    npm run systemd-install
 
 Serve frontend for testing with
 
