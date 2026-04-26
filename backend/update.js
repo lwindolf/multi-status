@@ -175,5 +175,5 @@ result.aggregators.forEach(a => {
 	});
 });
 // Write the feed to a file
-fs.writeFileSync(`${outputDir}/atom.xml`, feed.atom1(), 'utf-8');
-console.log(`Feed generated at ${outputDir}/atom.xml`);
+fs.writeFileSync(`${outputDir}/feed.atom`, feed.atom1(), 'utf-8');
+console.log(`Feed generated at ${outputDir}/feed.atom`);
