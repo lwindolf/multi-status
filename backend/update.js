@@ -3,6 +3,7 @@
 import './init.js';
 import fs from 'fs';
 import fetch from 'node-fetch';
+import { Feed as AtomFeedGenerator } from 'feed';
 import { parserAutoDiscover } from './feed-parser/autodiscover.js';
 import { NamespaceParser } from './feed-parser/namespace.js';
 import { XPath } from './feed-parser/xpath.js';
@@ -153,3 +154,26 @@ fs.writeFileSync(`${outputDir}/status.json`, JSON.stringify({
             maxAge     : updateInterval * 2
         }
 }), null, 2);
+
+// also write an Atom feed
+// Create a new feed
+const feed = new AtomFeedGenerator({
+	title       : "SaaS Multi Status - Recent Outages",
+	description : "A feed of all recent outages of all services checked by SaaS Multi Status",
+	id          : "https://lzone.de/multi-status",
+	link        : "https://lzone.de/multi-status"
+});
+// Add posts to the feed
+result.aggregators.forEach(a => {
+	a.results?.forEach(r => {
+		feed.addItem({
+			title       : a.name + ": " + r.title,
+			link        : a.url,
+			description : r.description,
+			date        : new Date(r.time * 1000)
+		});
+	});
+});
+// Write the feed to a file
+fs.writeFileSync(`${outputDir}/atom.xml`, feed.atom1(), 'utf-8');
+console.log(`Feed generated at ${outputDir}/atom.xml`);

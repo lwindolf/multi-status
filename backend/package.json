@@ -4,9 +4,10 @@
         "main": "update.js",
         "type": "module",
         "dependencies": {
+                "feed": "^5.2.1",
                 "jsdom": "^22.1.0",
-                "node-fetch":"^3.3.2"
-        }, 
+                "node-fetch": "^3.3.2"
+        },
         "config": {
                 "outputdir": "/var/www/multi-status"
         },
