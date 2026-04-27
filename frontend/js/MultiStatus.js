@@ -13,7 +13,7 @@ class MultiStatus {
     }
 
     static async getData(path) {
-        const response = await fetch(path + "/data.json");
+        const response = await fetch(path + "/data.json", { cache: 'no-store' });
         let json = await response.json();
         // FIXME: error handling
         return json;
