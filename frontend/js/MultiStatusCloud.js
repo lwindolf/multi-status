@@ -89,7 +89,7 @@ class MultiStatusCloud extends HTMLElement {
         const filter = await MultiStatus.getFilter();
         this.#data = await MultiStatus.getData(this.#path);
 
-        this.#setInfo(`Last updated: ${new Date(this.#data.time * 1000).toLocaleString()}`);
+        this.#setInfo(`Last updated: ${new Date(this.#data.time).toLocaleString()}`);
 
         this.#cloud.innerHTML = '<div class="status details" style="display: none;"></div>';
         this.#data.aggregators.sort((a, b) => {
