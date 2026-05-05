@@ -34,6 +34,7 @@
                         <outline type="rss" text="Redhat" xmlUrl="https://status.redhat.com/history.atom"/>
                         <outline type="rss" text="OVHcloud" xmlUrl="https://status.us.ovhcloud.com/pages/59dd23da8827c804746f1664/rss"/>
                         <outline type="rss" text="hetzner" xmlUrl="https://status.hetzner.com/de.atom"/>
+                        <outline type="rss" text="IONOS" xmlUrl="https://www.ionos-status.de/history.atom"/>
                         <outline type="rss" text="IONOS Cloud" xmlUrl="https://status.ionos.cloud/history.atom"/>
                         <outline type="rss" text="Ariscloud" xmlUrl="https://status-public.ariscloud.com/history.atom"/>
                         <outline type="rss" text="Rackspace" xmlUrl="https://rss.status.rackspace.com/snow/statusfeed"/>
