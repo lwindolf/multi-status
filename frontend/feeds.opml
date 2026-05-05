@@ -111,6 +111,7 @@
                         </outline>
 
                         <outline text="DNS">
+                                <outline type="rss" text="DENIC" xmlUrl="https://status.io/pages/592577eab611ce1e0d00046f/rss"/>
                                 <outline type="rss" text="dnsimple" xmlUrl="https://dnsimple.statuspage.io/history.atom"/>
                                 <outline type="rss" text="NS1 Connect" xmlUrl="https://status.ai-apps-comms.ibm.com/feed/iotm/api/v1/feedtype/rss/environment/jydaDOyJXCqsYwZxmbwUTg%3D%3D/servicetype/default/rss.xml"/>
                                 <outline type="rss" text="Quad9" xmlUrl="https://uptime.quad9.net/history.atom"/>
